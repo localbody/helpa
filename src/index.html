@@ -4,35 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 <body>
     
 
     <header>
-        <div class="logo"></div>
-        <button class="mobile-menu"></button>
+        <div class="container">
+            <div class="logo"></div>
+            <button class="mobile-menu"></button>
+        </div>
     </header>
 
     <main>
-        <div class="banners">
 
-            <div class="banner">
+        <div class="container">
+   
+            <div class="banner banner--selection">
                 <div class="banner__image-wrapper">
                     <img class="banner__image" src="./images/banners/image_01.svg" alt="">
                 </div>
                 <div class="banner__title">
-                    Подберём сиделку за <span>20 минут</span>
-                 </div>
+                    Подберём сиделку<br>за <span>20 минут</span>
+                    </div>
                 <div class="banner__text">
                     Мы помогаем ухаживать за вашими родными дома или в больнице. Регулярно навещаем их или постоянно проживаем рядом.
                 </div>
             </div>
 
-            <div class="banner">
+            <div class="banner banner--why">
                 <div class="banner__image-wrapper">
                     <img class="banner__image" src="./images/banners/image_02.svg" alt="">
                 </div>
+                <hr>
                 <div class="title">
                     Почему выбор нашей патронажной службы – это верное решение?
                 </div>
@@ -40,289 +47,294 @@
                     Мы специализируемся на заботе вот уже 15 лет, у нас огромный опыт в подборе персонала, наличие собственной базы работников, которая позволяет быстро найти нужного вам человека и договор, который защищает ваши интересы.
                 </div>
             </div>
+    
+            <div class="services">
+                <div class="title title--services">
+                    Наши услуги
+                </div>
+    
+                <div class="service">
+                    <div class="service__title service__title--sick-nurse">
+                        Услуги сиделки
+                    </div>
+                    <div class="service__text">
+                        Мы специализируемся на заботе вот уже 15 лет, у нас  огромный опыт в подборе персонала
+                    </div>
+                    <div class="service__price">
+                        от <span>130</span> руб/час 
+                    </div>
+                </div>
+    
+                <div class="service">
+                    <div class="service__title service__title--transfer">
+                        Перевозка больных
+                    </div>
+                    <div class="service__text">
+                        Мы специализируемся на заботе вот уже 15 лет, у нас  огромный опыт в подборе персонала
+                    </div>
+                    <div class="service__price">
+                        от <span>130</span> руб/час 
+                    </div>
+                </div>
+    
+                <div class="service">
+                    <div class="service__title service__title--nurse">
+                        Услуги медсестры
+                    </div>
+                    <div class="service__text">
+                        Мы специализируемся на заботе вот уже 15 лет, у нас  огромный опыт в подборе персонала
+                    </div>
+                    <div class="service__price">
+                        от <span>130</span> руб/час 
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="request">
+                <div class="request__image-wrapper">
+                    <img src="./images/banners/request.svg" alt="" class="request__image">
+                </div>
 
-        </div>
+                <div class="request__wrapper">
+                    <form action="" class="request__form form">
+                        <hr>
+                        <div class="form__title">
+                            Оставьте заявку 
+                        </div>
+                        <div class="form__subtitle">
+                            получите бесплатную консультацию специалиста по уходу
+                        </div>
+                        
+                        <div class="form__wrapper">
+                            <input type="text" class="form__input form__input--name" placeholder="Имя">
+                            <input type="text" class="form__input form__input--phone" placeholder="Телефон">
+                            <button class="form__button">
+                                Отправить заявку
+                            </button>
+                        </div>
+                    </form>
+                    <div class="dots"></div>
+                </div>
 
-        <div class="services">
-            <div class="title title--services">
-                Наши услуги
             </div>
 
-            <div class="service">
-                <div class="service__title">
-                    Услуги сиделки
+    
+            <div class="process">
+    
+                <div class="title">
+                    Как происходит процесс подбора?
                 </div>
-                <div class="service__text">
-                    Мы специализируемся на заботе вот уже 15 лет, у нас  огромный опыт в подборе персонала
-                </div>
-                <div class="service__price">
-                    от <span>130</span> руб/час 
-                </div>
-            </div>
-
-            <div class="service">
-                <div class="service__title">
-                    Перевозка больных
-                </div>
-                <div class="service__text">
-                    Мы специализируемся на заботе вот уже 15 лет, у нас  огромный опыт в подборе персонала
-                </div>
-                <div class="service__price">
-                    от <span>130</span> руб/час 
-                </div>
-            </div>
-
-            <div class="service">
-                <div class="service__title">
-                    Услуги медсестры
-                </div>
-                <div class="service__text">
-                    Мы специализируемся на заботе вот уже 15 лет, у нас  огромный опыт в подборе персонала
-                </div>
-                <div class="service__price">
-                    от <span>130</span> руб/час 
-                </div>
-            </div>
-
-        </div>
-
-        <div class="request">
-            <div class="request__image-wrapper">
-                <img src="./images/banners/request.svg" alt="" class="request__image">
-            </div>
-
-            <form action="" class="request__form form">
+    
                 <hr>
-                <div class="form__title">
-                    Оставьте заявку 
+    
+                <div class="process__items">
+    
+                    <div class="process__item">
+                        <div class="process__item-image-wrapper">
+                            <img src="./images/process-phone.svg" alt="" class="process__item-image">
+                        </div>
+                        <div class="process__item-description">
+                            <div class="process__item-index">1</div>
+                            <div class="process__item-text">Звоните или оформляете<br>заявку на сайте</div>    
+                        </div>
+                    </div>
+                    <div class="process__item">
+                        <div class="process__item-image-wrapper">
+                            <img src="./images/process-customer-service.svg" alt="" class="process__item-image">
+                        </div>
+                        <div class="process__item-description">
+                            <div class="process__item-index">2</div>
+                            <div class="process__item-text">Наш менеджер выясняет<br>ваши требования</div>    
+                        </div>
+                    </div>
+                    <div class="process__item">
+                        <div class="process__item-image-wrapper">
+                            <img src="./images/process-choose.svg" alt="" class="process__item-image">
+                        </div>
+                        <div class="process__item-description">
+                            <div class="process__item-index">3</div>
+                            <div class="process__item-text">Подбор и встреча с вашей<br>будущей сиделкой</div>    
+                        </div>
+                    </div>
+                    <div class="process__item">
+                        <div class="process__item-image-wrapper">
+                            <img src="./images/process-paper.svg" alt="" class="process__item-image">
+                        </div>
+                        <div class="process__item-description">
+                            <div class="process__item-index">4</div>
+                            <div class="process__item-text">Заключение договора,<br>внесение предоплаты</div>    
+                        </div>
+                    </div>
+                    <div class="process__item">
+                        <div class="process__item-image-wrapper">
+                            <img src="./images/process-nurse.svg" alt="" class="process__item-image">
+                        </div>
+                        <div class="process__item-description">
+                            <div class="process__item-index">5</div>
+                            <div class="process__item-text">Сиделка приступает<br>к работе</div>    
+                        </div>
+                    </div>
+    
                 </div>
-                <div class="form__subtitle">
-                    получите бесплатную консультацию специалиста по уходу
+    
+            </div>
+    
+            <div class="banner banner--work-with">
+                <div class="banner__image-wrapper">
+                    <img class="banner__image" src="./images/banners/work-with.svg" alt="">
                 </div>
-
-                <input type="text" class="form__input--name" placeholder="Имя">
-                <input type="text" class="form__input--phone" placeholder="Телефон">
-                <button class="form__button">
-                    Отправить заявку
+                <div class="title">
+                    С кем мы работаем?
+                </div>
+                
+                <hr>
+    
+                <div class="banner__text">
+                    <p>Мы работаем только с профессиональными сиделками, с необходимым опытом, которые имеют патент на работу, санитарную книжку, регистрацию и рекомендации с прошлых мест работы.</p>
+                    <br>
+                    <p>У медперсонала проверяем документы об образовании и изучаем опыт работы.</p>
+                </div>
+            </div>
+    
+            <div class="features">
+                <div class="title">наши преимущества</div>
+                <div class="features__subtitle">
+                    Будьте уверены, мы сможем подобрать удобный для вас график работы сиделки и варианты оплаты
+                </div>
+    
+                <div class="features__items">
+                    <div class="features__item features__item--search">
+                        Подберем сиделку под<br>ваш бюджет
+                    </div>
+                    <div class="features__item features__item--contract">
+                        Гарантия замены по<br>договору
+                    </div>
+                    <div class="features__item features__item--time">
+                        Сиделка в течении<br>часа     
+                    </div>
+                    <div class="features__item features__item--people">
+                        Более 10 тыс человек<br>доверили нам своих<br>близких
+                    </div>
+                    <div class="features__item features__item--diagnosis">
+                        Подбор сиделки<br>согласно диагнозу<br>пациента
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="transfer">
+                <div class="title">перевозка больных</div>
+                <hr>
+    
+                <div class="transfer__items">
+                    <div class="transfer__item transfer__item--bed">
+                        Мы организуем профессиональную, аккуратную перевозку больных из больницы домой или из одного учреждения в другое
+                    </div>
+                    <div class="transfer__item transfer__item--car">
+                        В нашем штате несколько автомобилей скорой помощи
+                    </div>
+                    <div class="transfer__item transfer__item--nurse">
+                        Подготовим транспорт и сопровождающую сиделку за 1 час!
+                    </div>
+                    <div class="transfer__item transfer__item-car2">
+                        Мы организуем профессиональную, перевозку от 5 тыс руб
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="order-transfer">
+                <div class="title">
+                    заказать перевозку
+                </div>
+                <hr>
+    
+                <div class="order-transfer__image-wrapper">
+                    <img src="./images/banners/order-transfer.svg" alt="" class="order-transfer__image">
+                </div>
+    
+                <div class="order-transfer__slogan">
+                    Закажите перевозку через наш сайт и получите скидку 10%
+                </div>
+    
+                <button>
+                    Заказать
                 </button>
-            </form>
-            <div class="dots"></div>
-
-        </div>
-
-        <div class="process">
-
-            <div class="title">
-                Как происходит процесс подбора?
+    
+    
             </div>
-
-            <hr>
-
-            <div class="process__items">
-
-                <div class="process__item">
-                    <div class="process__item-image-wrapper">
-                        <img src="./images/process-phone.svg" alt="" class="process__item-image">
-                    </div>
-                    <div class="process__item-description">
-                        <div class="process__item-index">1</div>
-                        <div class="process__item-text">Звоните или оформляете заявку на сайте</div>    
-                    </div>
+    
+            <div class="banner banner--about">
+                <div class="banner__image-wrapper">
+                    <img class="banner__image" src="./images/banners/about.svg" alt="">
                 </div>
-                <div class="process__item">
-                    <div class="process__item-image-wrapper">
-                        <img src="./images/process-customer-service.svg" alt="" class="process__item-image">
-                    </div>
-                    <div class="process__item-description">
-                        <div class="process__item-index">2</div>
-                        <div class="process__item-text">Наш менеджер выясняет ваши требования</div>    
-                    </div>
+                <div class="title">
+                    С кем мы работаем?
                 </div>
-                <div class="process__item">
-                    <div class="process__item-image-wrapper">
-                        <img src="./images/process-choose.svg" alt="" class="process__item-image">
-                    </div>
-                    <div class="process__item-description">
-                        <div class="process__item-index">3</div>
-                        <div class="process__item-text">Подбор и встреча с вашей будущей сиделкой</div>    
-                    </div>
+                
+                <hr>
+    
+                <div class="banner__text">
+                    <p>Мы работаем только с профессиональными сиделками, с необходимым опытом, которые имеют патент на работу, санитарную книжку, регистрацию и рекомендации с прошлых мест работы.</p>
+                    <p>У медперсонала проверяем документы об образовании и изучаем опыт работы.</p>
                 </div>
-                <div class="process__item">
-                    <div class="process__item-image-wrapper">
-                        <img src="./images/process-paper.svg" alt="" class="process__item-image">
-                    </div>
-                    <div class="process__item-description">
-                        <div class="process__item-index">4</div>
-                        <div class="process__item-text">Заключение договора, внесение предоплаты</div>    
-                    </div>
-                </div>
-                <div class="process__item">
-                    <div class="process__item-image-wrapper">
-                        <img src="./images/process-nurse.svg" alt="" class="process__item-image">
-                    </div>
-                    <div class="process__item-description">
-                        <div class="process__item-index">5</div>
-                        <div class="process__item-text">Сиделка приступает к работе</div>    
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="banner banner--work-with">
-            <div class="banner__image-wrapper">
-                <img class="banner__image" src="./images/banners/work-with.svg" alt="">
-            </div>
-            <div class="title">
-                С кем мы работаем?
-            </div>
-            
-            <hr>
-
-            <div class="banner__text">
-                <p>Мы работаем только с профессиональными сиделками, с необходимым опытом, которые имеют патент на работу, санитарную книжку, регистрацию и рекомендации с прошлых мест работы.</p>
-                <p>У медперсонала проверяем документы об образовании и изучаем опыт работы.</p>
             </div>
         </div>
-
-        <div class="features">
-            <div class="title">наши преимущества</div>
-            <div class="features__subtitle">
-                Будьте уверены, мы сможем подобрать удобный для вас график работы сиделки и варианты оплаты
-            </div>
-
-            <div class="features__items">
-                <div class="feature__item feature__item--search">
-                    Подберем сиделку под ваш бюджет
-                </div>
-                <div class="feature__item feature__item--contract">
-                    Гарантия замены по договору
-                </div>
-                <div class="feature__item feature__item--time">
-                    Сиделка в течении часа     
-                </div>
-                <div class="feature__item feature__item--people">
-                    Более 10 тыс человек доверили нам своих близких
-                </div>
-                <div class="feature__item feature__item--diagnosis">
-                    Подбор сиделки согласно диагнозу пациента
-                </div>
-            </div>
-
-        </div>
-
-        <div class="transfer">
-            <div class="title">перевозка больных</div>
-            <hr>
-
-            <div class="transfer__items">
-                <div class="transfer__item transfer__item--bed">
-                    Мы организуем профессиональную, аккуратную перевозку больных из больницы домой или из одного учреждения в другое
-                </div>
-                <div class="transfer__item transfer__item--car">
-                    В нашем штате несколько автомобилей скорой помощи
-                </div>
-                <div class="transfer__item transfer__item--nurse">
-                    Подготовим транспорт и сопровождающую сиделку за 1 час!
-                </div>
-                <div class="transfer__item transfer__item-car2">
-                    Мы организуем профессиональную, перевозку от 5 тыс руб
-                </div>
-            </div>
-
-        </div>
-
-        <div class="order-transfer">
-            <div class="title">
-                заказать перевозку
-            </div>
-            <hr>
-
-            <div class="order-transfer__image-wrapper">
-                <img src="./images/banners/order-transfer.svg" alt="" class="order-transfer__image">
-            </div>
-
-            <div class="order-transfer__slogan">
-                Закажите перевозку через наш сайт и получите скидку 10%
-            </div>
-
-            <button>
-                Заказать
-            </button>
-
-
-        </div>
-
-        <div class="banner banner--about">
-            <div class="banner__image-wrapper">
-                <img class="banner__image" src="./images/banners/about.svg" alt="">
-            </div>
-            <div class="title">
-                С кем мы работаем?
-            </div>
-            
-            <hr>
-
-            <div class="banner__text">
-                <p>Мы работаем только с профессиональными сиделками, с необходимым опытом, которые имеют патент на работу, санитарную книжку, регистрацию и рекомендации с прошлых мест работы.</p>
-                <p>У медперсонала проверяем документы об образовании и изучаем опыт работы.</p>
-            </div>
-        </div>
-
-
     </main>
 
     <footer>
-        <div class="footer-menu">
-            <div class="footer-menu__items">
-                <div class="footer-menu__items-title">
-                    Подбор сиделки
+        <div class="container">
+            <div class="footer-menu">
+                <div class="footer-menu__items">
+                    <div class="footer-menu__items-title">
+                        Подбор сиделки
+                    </div>
+                    <div class="footer-menu__item">
+                        <a class="footer-menu__item-link" href="">Для лежачего больного</a>
+                    </div>
+                    <div class="footer-menu__item">
+                        <a class="footer-menu__item-link" href="">С проживанием в Москве</a>
+                    </div>
+                    <div class="footer-menu__item">
+                        <a class="footer-menu__item-link" href="">В больницу в Москву</a>
+                    </div>
+                    <div class="footer-menu__item">
+                        <a class="footer-menu__item-link" href="">Без проживания в Москве</a>
+                    </div>
+                    <div class="footer-menu__item">
+                        <a class="footer-menu__item-link" href="">Для бабушки</a>
+                    </div>
+                    <div class="footer-menu__item">
+                        <a class="footer-menu__item-link" href="">На выходные</a>
+                    </div>
+                    <div class="footer-menu__item">
+                        <a class="footer-menu__item-link" href="">Суточная сиделка</a>
+                    </div>
+                    <div class="footer-menu__item">
+                        <a class="footer-menu__item-link" href="">Сиделка в Москве</a>
+                    </div>
                 </div>
-                <div class="footer-menu__item">
-                    <a class="footer-menu__item-link" href="">Для лежачего больного</a>
+    
+                <div class="footer-menu__items">
+                    <div class="footer-menu__items-title">
+                        
+                    </div>
+                    <div class="footer-menu__item">
+                        <a class="footer-menu__item-link" href=""></a>
+                    </div>
                 </div>
-                <div class="footer-menu__item">
-                    <a class="footer-menu__item-link" href="">С проживанием в Москве</a>
+    
+                <div class="footer-menu__items">
+                    <div class="footer-menu__items-title">
+                        
+                    </div>
+                    <div class="footer-menu__item">
+                        <a class="footer-menu__item-link" href=""></a>
+                    </div>
                 </div>
-                <div class="footer-menu__item">
-                    <a class="footer-menu__item-link" href="">В больницу в Москву</a>
-                </div>
-                <div class="footer-menu__item">
-                    <a class="footer-menu__item-link" href="">Без проживания в Москве</a>
-                </div>
-                <div class="footer-menu__item">
-                    <a class="footer-menu__item-link" href="">Для бабушки</a>
-                </div>
-                <div class="footer-menu__item">
-                    <a class="footer-menu__item-link" href="">На выходные</a>
-                </div>
-                <div class="footer-menu__item">
-                    <a class="footer-menu__item-link" href="">Суточная сиделка</a>
-                </div>
-                <div class="footer-menu__item">
-                    <a class="footer-menu__item-link" href="">Сиделка в Москве</a>
-                </div>
+    
             </div>
-
-            <div class="footer-menu__items">
-                <div class="footer-menu__items-title">
-                    
-                </div>
-                <div class="footer-menu__item">
-                    <a class="footer-menu__item-link" href=""></a>
-                </div>
-            </div>
-
-            <div class="footer-menu__items">
-                <div class="footer-menu__items-title">
-                    
-                </div>
-                <div class="footer-menu__item">
-                    <a class="footer-menu__item-link" href=""></a>
-                </div>
-            </div>
-
         </div>
     </footer>
 
