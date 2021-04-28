@@ -16,7 +16,6 @@ $('body').removeClass('lock');
 document.addEventListener('keydown', function (e) {
 if (e.which === 27) {
     closePopups();
-    closeSubmenu();
 }
 })
 

@@ -158,6 +158,26 @@ body {
   margin: 0 auto;
 }
 
+.container--header {
+  height: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container--menu {
+  width: 480px;
+  padding-bottom: 191px;
+  -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.08);
+}
+
 .lock {
   overflow: hidden;
 }
@@ -182,26 +202,20 @@ hr {
   margin: 0;
 }
 
-header {
+main {
+  margin-top: 38px;
+}
+
+.header {
   background: white;
+}
+
+.header__inner {
   -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.08);
-  margin-bottom: 38px;
 }
 
-header .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-header .logo {
+.header .logo {
   width: 150px;
   height: 52px;
   background-image: url(../images/logo.svg);
@@ -210,7 +224,7 @@ header .logo {
   background-size: contain;
 }
 
-header .mobile-menu {
+.header .mobile-menu__button {
   width: 46px;
   height: 46px;
   background-image: url(../images/hamburger.svg);
@@ -966,5 +980,114 @@ header .mobile-menu {
   -webkit-box-shadow: 9px 9px 0px -2px white, 9px 9px 0px 0px #6165D7;
           box-shadow: 9px 9px 0px -2px white, 9px 9px 0px 0px #6165D7;
   color: white;
+}
+
+.menu {
+  background-color: white;
+}
+
+.menu__items {
+  background-color: #FFC444;
+}
+
+.menu__item:hover {
+  background-color: #FCB721;
+  -webkit-box-shadow: 0px 1px 0px 0px #FCB721;
+          box-shadow: 0px 1px 0px 0px #FCB721;
+}
+
+.menu__item:last-child:hover,
+.menu__item:last-child a {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.menu__link {
+  height: 58px;
+  margin-left: 21px;
+  margin-right: 21px;
+  font-size: 18px;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 1px 0px 0px white;
+          box-shadow: 0px 1px 0px 0px white;
+}
+
+.menu__link:hover {
+  background-color: #FCB721;
+  -webkit-box-shadow: 0px 1px 0px 0px #FCB721;
+          box-shadow: 0px 1px 0px 0px #FCB721;
+}
+
+.menu__link--dropdown::after {
+  display: block;
+  width: 14px;
+  height: 14px;
+  content: "";
+  background-image: url(../images/arrow-bottom.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 14px;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.menu__link--dropdown-open::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.menu .submenu__items {
+  background-color: white;
+}
+
+.menu .submenu__item:hover {
+  background-color: #F4F5FE;
+  -webkit-box-shadow: 0px 1px 0px 0px #F4F5FE;
+          box-shadow: 0px 1px 0px 0px #F4F5FE;
+}
+
+.menu .submenu__item:last-child:hover,
+.menu .submenu__item:last-child a {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.menu .submenu__link {
+  height: 43px;
+  margin-left: 21px;
+  margin-right: 21px;
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 1px 0px 0px #DDDEFF;
+          box-shadow: 0px 1px 0px 0px #DDDEFF;
+}
+
+.menu .submenu__link:hover {
+  background-color: #F4F5FE;
+  -webkit-box-shadow: 0px 1px 0px 0px #F4F5FE;
+          box-shadow: 0px 1px 0px 0px #F4F5FE;
 }
 /*# sourceMappingURL=style.css.map */
