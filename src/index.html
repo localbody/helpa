@@ -109,7 +109,7 @@
                         <div class="form__wrapper">
                             <input type="text" class="form__input form__input--name" placeholder="Имя">
                             <input type="text" class="form__input form__input--phone" placeholder="Телефон">
-                            <button class="form__button">
+                            <button class="form__button popup-opener" data-popup="request-ok">
                                 Отправить заявку
                             </button>
                         </div>
@@ -237,7 +237,7 @@
                     <div class="transfer__item transfer__item--nurse">
                         Подготовим транспорт и сопровождающую сиделку за 1 час!
                     </div>
-                    <div class="transfer__item transfer__item-car2">
+                    <div class="transfer__item transfer__item--car2">
                         Мы организуем профессиональную, перевозку от 5 тыс руб
                     </div>
                 </div>
@@ -255,10 +255,10 @@
                 </div>
     
                 <div class="order-transfer__slogan">
-                    Закажите перевозку через наш сайт и получите скидку 10%
+                    Закажите перевозку через наш сайт и получите <span>скидку 10%</span>
                 </div>
     
-                <button>
+                <button class="button button--order">
                     Заказать
                 </button>
     
@@ -270,7 +270,7 @@
                     <img class="banner__image" src="./images/banners/about.svg" alt="">
                 </div>
                 <div class="title">
-                    С кем мы работаем?
+                    О нас
                 </div>
                 
                 <hr>
@@ -283,61 +283,169 @@
         </div>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="footer-menu">
-                <div class="footer-menu__items">
-                    <div class="footer-menu__items-title">
-                        Подбор сиделки
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer-menu">
+    
+                    <div class="footer-menu__wrapper">
+                        <div class="footer-menu__title footer-menu__title--open">
+                            Подбор сиделки
+                        </div>
+                        <div class="footer-menu__items footer-menu__items--open">
+                            <div class="footer-menu__item">
+                                <a class="footer-menu__item-link" href="">Для лежачего больного</a>
+                            </div>
+                            <div class="footer-menu__item">
+                                <a class="footer-menu__item-link" href="">С проживанием в Москве</a>
+                            </div>
+                            <div class="footer-menu__item">
+                                <a class="footer-menu__item-link" href="">В больницу в Москву</a>
+                            </div>
+                            <div class="footer-menu__item">
+                                <a class="footer-menu__item-link" href="">Без проживания в Москве</a>
+                            </div>
+                            <div class="footer-menu__item">
+                                <a class="footer-menu__item-link" href="">Для бабушки</a>
+                            </div>
+                            <div class="footer-menu__item">
+                                <a class="footer-menu__item-link" href="">На выходные</a>
+                            </div>
+                            <div class="footer-menu__item">
+                                <a class="footer-menu__item-link" href="">Суточная сиделка</a>
+                            </div>
+                            <div class="footer-menu__item">
+                                <a class="footer-menu__item-link" href="">Сиделка в Москве</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="footer-menu__item">
-                        <a class="footer-menu__item-link" href="">Для лежачего больного</a>
+        
+                    <div class="footer-menu__wrapper">
+                        <div class="footer-menu__title">
+                            Полезные материалы
+                        </div>
+                        <div class="footer-menu__items">
+                            <div class="footer-menu__item">
+                                <a class="footer-menu__item-link" href="">Для лежачего больного</a>
+                            </div>
+                            <div class="footer-menu__item">
+                                <a class="footer-menu__item-link" href="">С проживанием в Москве</a>
+                            </div>
+                            <div class="footer-menu__item">
+                                <a class="footer-menu__item-link" href="">В больницу в Москву</a>
+                            </div>
+                            <div class="footer-menu__item">
+                                <a class="footer-menu__item-link" href="">Без проживания в Москве</a>
+                            </div>
+                            <div class="footer-menu__item">
+                                <a class="footer-menu__item-link" href="">Для бабушки</a>
+                            </div>
+                            <div class="footer-menu__item">
+                                <a class="footer-menu__item-link" href="">На выходные</a>
+                            </div>
+                            <div class="footer-menu__item">
+                                <a class="footer-menu__item-link" href="">Суточная сиделка</a>
+                            </div>
+                            <div class="footer-menu__item">
+                                <a class="footer-menu__item-link" href="">Сиделка в Москве</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="footer-menu__item">
-                        <a class="footer-menu__item-link" href="">С проживанием в Москве</a>
+        
+                    <div class="footer-menu__wrapper">
+                        <div class="footer-menu__title">
+                            HELPA.RU
+                        </div>
+                        <div class="footer-menu__items">
+                            <div class="footer-menu__item">
+                                <a class="footer-menu__item-link" href="">О нас</a>
+                            </div>
+                            <div class="footer-menu__item">
+                                <a class="footer-menu__item-link" href="">Наш договор</a>
+                            </div>
+                            <div class="footer-menu__item">
+                                <a class="footer-menu__item-link" href="">Обязанности сиделки</a>
+                            </div>
+                            <div class="footer-menu__item">
+                                <a class="footer-menu__item-link" href="">Вакансии</a>
+                            </div>
+                            <div class="footer-menu__item">
+                                <a class="footer-menu__item-link" href="">Карта сайта</a>
+                            </div>
+                        </div>
+    
                     </div>
-                    <div class="footer-menu__item">
-                        <a class="footer-menu__item-link" href="">В больницу в Москву</a>
+        
+                </div>
+
+                <div class="info">
+                    <div class="title title--white">Мы в соц.сетях</div>
+
+                    <div class="info__item info__item--phone">
+                        <a href="tel:+74955009506" class="info__item--link">+7 (495) 500-95-06</a>
                     </div>
-                    <div class="footer-menu__item">
-                        <a class="footer-menu__item-link" href="">Без проживания в Москве</a>
+
+                    <div class="info__item info__item--worktime">
+                        <div class="info__item-wrapper">
+                            Пн-Вс 9:00 – 20:00<br>
+                            <span>Без выходных</span>
+                        </div>
                     </div>
-                    <div class="footer-menu__item">
-                        <a class="footer-menu__item-link" href="">Для бабушки</a>
+
+                    <div class="info__item info__item--address">
+                        г. Москва, ул. Саранская дом 8 оф. 4
                     </div>
-                    <div class="footer-menu__item">
-                        <a class="footer-menu__item-link" href="">На выходные</a>
+
+                    <div class="info__messengers">
+                        <a href="" class="info__telegram"></a>
+                        <a href="" class="info__whatsapp"></a>
                     </div>
-                    <div class="footer-menu__item">
-                        <a class="footer-menu__item-link" href="">Суточная сиделка</a>
-                    </div>
-                    <div class="footer-menu__item">
-                        <a class="footer-menu__item-link" href="">Сиделка в Москве</a>
+
+                    <div class="info__wtite-to">
+                        <a href="" class="info__write-to-whatsapp">Написать в вотсап</a>
+                        <a href="" class="info__write-to-telegram">Написать телеграм</a>
                     </div>
                 </div>
-    
-                <div class="footer-menu__items">
-                    <div class="footer-menu__items-title">
-                        
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="copyright">
+                    <div class="copyright__info">
+                        Весь контект является интеллектуальной собственностью и <span>не подлежит копированию</span>
                     </div>
-                    <div class="footer-menu__item">
-                        <a class="footer-menu__item-link" href=""></a>
+    
+                    <div class="copyright__info">
+                        2001-2018 © Патронажная Служба Москвы "ХЭЛП"
                     </div>
                 </div>
-    
-                <div class="footer-menu__items">
-                    <div class="footer-menu__items-title">
-                        
-                    </div>
-                    <div class="footer-menu__item">
-                        <a class="footer-menu__item-link" href=""></a>
-                    </div>
-                </div>
-    
             </div>
         </div>
     </footer>
 
+
+<!-- POPUP SEARCH -->
+<div id="popup-request-ok" class="popup popup--request-ok">
+    <div class="popup__body">
+        <div class="popup__content">
+            <button class="popup__close"></button>
+            <div class="popup__title">
+                Ваша заявка принята!
+            </div>
+            <div class="popup__description">
+                Наши специалисты свяжусться с вами
+                в самое  ближайшее время 
+            </div>
+            <hr>
+        </div>
+    </div>
+  </div>
+  <!-- END POPUP SEARCH  -->
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/popup.js"></script>
 
 </body>
 </html>
