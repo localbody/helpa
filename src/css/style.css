@@ -762,8 +762,6 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: -15px;
-  margin-bottom: -15px;
   padding: 35px 28px;
 }
 
@@ -1165,6 +1163,10 @@ main {
 .menu__etc-link--doc span {
   height: 30px;
   border-bottom: 2px dashed #6165D7;
+}
+
+.menu__etc-link--doc:hover {
+  color: #8773E9;
 }
 
 .menu__etc-link--whatsapp {

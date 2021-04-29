@@ -564,8 +564,8 @@ main {
             flex-direction: column;
             //row-gap: 30px;
 
-            margin-top: -15px;
-            margin-bottom: -15px;
+            // margin-top: -15px;
+            // margin-bottom: -15px;
     
             & > * {
                 margin-top: 15px;
@@ -968,6 +968,9 @@ main {
                     border-bottom: 2px dashed $bg-accent;
                 }
 
+                &:hover {
+                    color: $accent;
+                }
                 
             }
 
