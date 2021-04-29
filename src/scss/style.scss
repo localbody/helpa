@@ -52,7 +52,7 @@ input[type=file] {
 @import 'popup';
  
 body {
-    min-width: 440px;
+    min-width: 480px;
     // overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -75,8 +75,7 @@ body {
 
     &--menu {
         width: 480px;
-        padding-bottom: 191px;
-        box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.08);
+        margin: 0 auto;
     }
 
 }
@@ -133,6 +132,11 @@ main {
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+        transition: 0.3s ease all;
+
+        &--close {
+            background-image: url(../images/hamburger-close.svg);
+        }
     }
 }
 
@@ -628,7 +632,7 @@ main {
                 height: 0;
                 opacity: 0;
                 visibility: hidden;
-                transition: 0.3s ease opacity;
+                transition: 0.3s ease all;
     
                 &--open {
                     height: initial;
@@ -856,11 +860,82 @@ main {
 // menu ***
 
 .menu {
+
+    position: absolute;
+    width: 480px;
+    top: -1000px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease all;
     background-color: white;
-    // box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.08);
+
+    &__etc {
+        margin-bottom: 191px;
+
+        &-link {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-weight: 600;
+
+            &--doc {
+                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 27px;
+
+                &::before {
+                    content: "";
+
+                    width: 32px;
+                    height: 42px;
+                    margin-right: 15px;
+
+                    background-image: url(../images/doc.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+
+                span {
+                    height: 30px;
+                    border-bottom: 2px dashed $bg-accent;
+                }
+            }
+
+            &--whatsapp {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid $bg-accent;
+                border-radius: 5px;
+
+                height: 63px;
+                transition: 0.3s ease all;
+            }
+
+            &--whatsapp:hover {
+                background-color: $bg-accent;
+                color: white;
+            }
+        }
+
+
+
+
+    }
+
+    &--open {
+        top: 72px;
+        opacity: 1;
+        visibility: visible;
+    }
 
     &__items {
         background-color: $yellow;
+        margin-bottom: 29px;
     }
 
     &__item {
@@ -918,6 +993,16 @@ main {
 
         &__items {
             background-color: white;
+            height: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s ease all;
+
+            &--open {
+                height: initial;
+                opacity: 1;
+                visibility: visible;
+            }
         }
 
         &__item {
