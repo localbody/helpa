@@ -17,16 +17,16 @@
         <div class="header__inner">
             <div class="container container--header">
                 <div class="logo"></div>
-                <button class="mobile-menu__button mobile-menu__button--close"></button>        
+                <button class="mobile-menu__button"></button>        
             </div>
         </div>
 
         <div class="container--menu">
-            <nav class="menu menu--open">
+            <nav class="menu">
                     <ul class="menu__items">
                         <li class="menu__item"><a href="" class="menu__link">Главная</a></li>
-                        <li class="menu__item menu__item--dropdown"><a href="" class="menu__link menu__link--dropdown menu__link--dropdown-open">Услуги</a>
-                            <ul class="submenu__items submenu__items--open">
+                        <li class="menu__item menu__item--dropdown"><a href="" class="menu__link menu__link--dropdown">Услуги</a>
+                            <ul class="submenu__items">
                                 <li class="submenu__item"><a href="" class="submenu__link">Сиделка с проживанием</a></li>
                                 <li class="submenu__item"><a href="" class="submenu__link">Сиделка без проживания</a></li>
                                 <li class="submenu__item"><a href="" class="submenu__link">Сиделка в больницу</a></li>
@@ -46,7 +46,7 @@
                 <div class="menu__etc container">
                     <div class="menu__etc-items">
                         <div class="menu__etc-item">
-                            <a href="" class="menu__etc-link menu__etc-link--doc">
+                            <a href="/upload/doc.pdf" class="menu__etc-link menu__etc-link--doc">
                                 <span>Типовой договор</span>
                             </a>
                         </div>
@@ -301,7 +301,7 @@
                     Закажите перевозку через наш сайт и получите <span>скидку 10%</span>
                 </div>
     
-                <button class="button button--order">
+                <button class="button button--order popup-opener" data-popup="transfer">
                     Заказать
                 </button>
     
@@ -468,7 +468,7 @@
     </footer>
 
 
-<!-- POPUP SEARCH -->
+<!-- POPUP REQUEST -->
 <div id="popup-request-ok" class="popup popup--request-ok">
     <div class="popup__body">
         <div class="popup__content">
@@ -482,8 +482,64 @@
             <hr>
         </div>
     </div>
-  </div>
-  <!-- END POPUP SEARCH  -->
+</div>
+<!-- END POPUP REQUEST  -->
+
+
+<!-- POPUP TRANSFER -->
+<div id="popup-transfer" class="popup popup--transfer">
+    <div class="popup__body">
+        <div class="popup__content">
+            <button class="popup__close"></button>
+            <div class="popup__title">
+                Заказать перевозку
+            </div>
+            <hr>
+            <div class="popup__description">
+                
+                <form class="form" action="">
+
+                    <input class="form__input" type="text" placeholder="Ваша Фамилия и Имя">
+                    <input class="form__input" type="text" placeholder="Ваш телефон">
+                    <button class="form__button">
+                        Отправить заявку
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END POPUP TRANSFER  -->
+
+<!-- POPUP SELECTION -->
+<div id="popup-selection" class="popup popup--selection">
+    <div class="popup__body">
+        <div class="popup__content">
+            <button class="popup__close"></button>
+            <div class="popup__title">
+                Заказать подбор сиделки
+            </div>
+            <hr>
+            <div class="popup__description">
+                
+                <div class="popup__text">
+                    Укажите свой номер телефона и вы сможете получить ответ на все интересующие вас вопросы
+                </div> 
+
+                <form class="form" action="">
+                    <input class="form__input" type="text" placeholder="Ваш телефон">
+                    <button class="form__button">
+                        Отправить заявку
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END POPUP SELECTION  -->
 
     <script src="./js/jquery.min.js"></script>
     <script src="./js/script.js"></script>

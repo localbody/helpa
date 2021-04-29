@@ -18,8 +18,8 @@ $('.footer-menu__title').click(
 
 $('.mobile-menu__button').click(
     function () {
-        $('nav.menu').toggleClass('menu--open');
         $('.mobile-menu__button').toggleClass('mobile-menu__button--close');
+        $('nav.menu').toggleClass('menu--open');
     }
 )
 

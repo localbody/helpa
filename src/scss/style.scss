@@ -243,8 +243,16 @@ main {
 .services {
     display: flex;
     flex-direction: column;
-    row-gap: 23px;
-    margin-bottom: 42px;
+    
+    // row-gap: 22px;
+    margin-top: -11px;
+    margin-bottom: 31px;
+    // margin-bottom: 42px;
+
+    & > * {
+        margin-top: 11px;
+        margin-bottom: 11px;
+    }
 
     .service {
         height: 253px;
@@ -329,7 +337,6 @@ main {
 
         .form {
             
-
             &__title {
                 color: $purple;
                 font-family: $font2;
@@ -369,7 +376,15 @@ main {
             &__wrapper {
                 display: flex;
                 flex-direction: column;
-                row-gap: 21px;
+                // row-gap: 22px;
+
+                margin-bottom: -11px;
+                margin-top: -11px;
+
+                & > * {
+                    margin-bottom: 11px;
+                    margin-top: 11px;
+                }
             }
         }
     
@@ -393,7 +408,16 @@ main {
     &__items {
         display: flex;
         flex-direction: column;
-        row-gap: 38px;        
+        // row-gap: 38px;
+
+        margin-top: -19px;
+        margin-bottom: -19px;
+
+        & > * {
+            margin-top: 19px;
+            margin-bottom: 19px;
+        }
+
     }
 
     &__item {
@@ -456,7 +480,15 @@ main {
     &__items {
         display: flex;
         flex-direction: column;
-        row-gap: 37px;
+        // row-gap: 36px;
+
+        margin-top: -18px;
+        margin-bottom: -18px;
+
+        & > * {
+            margin-top: 18px;
+            margin-bottom: 18px;
+        }
 
     }
 
@@ -512,7 +544,14 @@ main {
 
         display: flex;
         flex-direction: column;
-        row-gap: 22px;
+        // row-gap: 22px;
+        margin-top: -11px;
+        margin-bottom: -11px;
+
+        & > * {
+            margin-top: 11px;
+            margin-bottom: 11px;
+        }
 
         .transfer__item {
             border: 1px solid #E1E1E1;
@@ -523,7 +562,15 @@ main {
 
             display: flex;
             flex-direction: column;
-            row-gap: 29px;
+            //row-gap: 30px;
+
+            margin-top: -15px;
+            margin-bottom: -15px;
+    
+            & > * {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
 
             padding: 35px 28px;
 
@@ -663,7 +710,15 @@ main {
 
             display: flex;
             flex-direction: column;
-            row-gap: 45px;
+            // row-gap: 44px;
+
+            margin-top: -22px;
+            margin-bottom: -22px;
+
+            & > * {
+                margin-top: 22px;
+                margin-bottom: 22px;
+            }
 
             &__item {
 
@@ -812,7 +867,16 @@ main {
 
             display: flex;
             flex-direction: column;
-            row-gap: 21px;
+            // row-gap: 22px;
+
+            margin-top: -11px;
+            margin-bottom: -11px;
+
+            & > * {
+                margin-top: 11px;
+                margin-bottom: 11px;
+            }
+
 
             &__info {
                 font-size: 18px;
@@ -903,6 +967,8 @@ main {
                     height: 30px;
                     border-bottom: 2px dashed $bg-accent;
                 }
+
+                
             }
 
             &--whatsapp {
