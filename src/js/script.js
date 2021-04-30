@@ -1,3 +1,26 @@
+$('.filters__button').click(
+    function () {
+        console.log( $(this).parent('filters') );
+
+        $(this).parent('filters').toggleClass('filters--open');
+    }
+)
+
+$('.faq__item-question').click(
+    function () {
+
+        let faq = $(this).parent('.faq__item');
+
+        if ( faq.hasClass('faq__item--open') ) {
+            faq.removeClass('faq__item--open')
+        } else {
+            $('.faq__item.faq__item--open').removeClass('faq__item--open');
+            faq.addClass('faq__item--open');
+        }
+        
+    }
+)
+
 $('.footer-menu__title').click(
     function () {
 
@@ -29,6 +52,7 @@ $('.menu__item--dropdown').click(
         $(this).find('.menu__link--dropdown').toggleClass('menu__link--dropdown-open');
         $(this).find('.submenu__items').toggleClass('submenu__items--open');
     }
-
 )
+
+
 
