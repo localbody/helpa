@@ -1896,6 +1896,14 @@ main {
   color: black;
 }
 
+.includes {
+  margin-bottom: 83px;
+}
+
+.includes .title {
+  margin-bottom: 65px;
+}
+
 .includes__items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1904,13 +1912,13 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: -17px;
-  margin-bottom: -17px;
+  margin-top: -25px;
+  margin-bottom: -25px;
 }
 
 .includes__items > * {
-  margin-top: 17px;
-  margin-bottom: 17px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .includes__item {
@@ -1960,5 +1968,182 @@ main {
 
 .includes__item span {
   color: #6165D7;
+}
+
+.prices .title {
+  margin-bottom: 12px;
+}
+
+.prices .title--consultation {
+  margin-bottom: 40px;
+}
+
+.prices hr {
+  margin-bottom: 50px;
+}
+
+.prices__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -23px;
+  margin-bottom: 34px;
+}
+
+.prices__items > * {
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+
+.prices__item {
+  -webkit-box-shadow: 0px 4px 12px rgba(97, 101, 215, 0.15);
+          box-shadow: 0px 4px 12px rgba(97, 101, 215, 0.15);
+  border-radius: 10px;
+  height: 414px;
+  padding: 211px 31px 39px 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 35px;
+  background-size: 161px;
+}
+
+.prices__item--without-accommodation {
+  background-image: url(../images/without-accommodation.svg);
+}
+
+.prices__item--with-accommodation {
+  background-image: url(../images/with-accommodation.svg);
+}
+
+.prices__item--day-nurse {
+  background-image: url(../images/day-nurse.svg);
+}
+
+.prices__item--night-nurse {
+  background-image: url(../images/night-nurse.svg);
+}
+
+.prices__item--hospital-nurse {
+  background-image: url(../images/hospital-nurse.svg);
+}
+
+.prices__item--bedridden-nurse {
+  background-image: url(../images/bedridden-nurse.svg);
+}
+
+.prices__item-title {
+  font-weight: 700;
+  font-size: 21px;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.prices__item-value {
+  color: #6165D7;
+  margin-bottom: 23px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.prices__item-value::before {
+  content: "Цена за месяц:";
+  font-size: 24px;
+  font-weight: 400;
+  color: black;
+}
+
+.prices__item-value::after {
+  content: "руб";
+  font-size: 24px;
+  font-weight: 400;
+  color: black;
+}
+
+.prices__item-button {
+  border: 2px solid #6165D7;
+  border-radius: 5px;
+  color: black;
+  font-size: 19px;
+  font-weight: 700;
+  height: 68px;
+  width: 100%;
+}
+
+.prices-features {
+  background: #FBFBFB;
+  border-radius: 5px;
+  padding: 55px 25px;
+  margin-bottom: 65px;
+}
+
+.prices-features__title {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.prices-features hr {
+  margin-bottom: 41px;
+}
+
+.prices-features__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -22px;
+  margin-bottom: -22px;
+}
+
+.prices-features__items > * {
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.prices-features__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.prices-features__item::before {
+  content: "";
+  background-image: url(../images/clipboard.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 69px;
+  width: 49px;
+  margin-right: 31px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 /*# sourceMappingURL=style.css.map */

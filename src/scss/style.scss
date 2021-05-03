@@ -1685,16 +1685,23 @@ main {
 // includes ***
 .includes {
 
+    margin-bottom: 83px;
+
+    .title {
+        margin-bottom: 65px;
+    }
+
+
     &__items {
         display: flex;
         flex-direction: column;
 
-        margin-top: -17px;
-        margin-bottom: -17px;
+        margin-top: -25px;
+        margin-bottom: -25px;
 
         & > * {
-            margin-top: 17px;
-            margin-bottom: 17px;
+            margin-top: 25px;
+            margin-bottom: 25px;
         }
     }
 
@@ -1742,3 +1749,175 @@ main {
 
 }
 // *** includes
+
+
+.prices {
+
+    .title {     
+        margin-bottom: 12px;
+
+        &--consultation {
+            margin-bottom: 40px;
+        }
+    
+    }
+
+    hr {
+        margin-bottom: 50px;
+    }
+
+    &__items {
+
+        display: flex;
+        flex-direction: column;
+
+        margin-top: -23px;
+        margin-bottom: 34px;
+
+        & > * {
+            margin-top: 23px;
+            margin-bottom: 23px;
+        }
+
+    }
+
+    &__item {
+        box-shadow: 0px 4px 12px rgba(97, 101, 215, 0.15);
+        border-radius: 10px;
+        height: 414px;
+        padding: 211px 31px 39px 31px;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        background-repeat: no-repeat;
+        background-position-x: center ;
+        background-position-y: 35px;
+        background-size: 161px;
+
+        &--without-accommodation {
+            background-image: url(../images/without-accommodation.svg);
+        }
+        &--with-accommodation {
+            background-image: url(../images/with-accommodation.svg);
+        }
+        &--day-nurse {
+            background-image: url(../images/day-nurse.svg);
+        }
+        &--night-nurse {
+            background-image: url(../images/night-nurse.svg);
+        }
+        &--hospital-nurse {
+            background-image: url(../images/hospital-nurse.svg);
+        }
+        &--bedridden-nurse {
+            background-image: url(../images/bedridden-nurse.svg);
+        }
+
+        &-title {
+            font-weight: 700;
+            font-size: 21px;
+            color: black;
+            margin-bottom: 15px;
+        }
+
+        &-value {
+            color: $bg-accent;
+            margin-bottom: 23px;
+            font-size: 30px;
+            font-weight: 700;
+
+            &::before {
+                content: "Цена за месяц:";
+                font-size: 24px;
+                font-weight: 400;
+                color: black;
+            }
+
+            &::after {
+                content: "руб";
+                font-size: 24px;
+                font-weight: 400;
+                color: black;
+            }
+
+        }
+
+
+        &-button {
+            border: 2px solid $bg-accent;
+            border-radius: 5px;
+
+            color: black;
+            font-size: 19px;
+            font-weight: 700;
+            height: 68px;
+            width: 100%;
+        }
+
+
+    }
+
+}
+
+.prices-features {
+    background: #FBFBFB;
+    border-radius: 5px;
+
+    padding: 55px 25px;
+
+    margin-bottom: 65px;
+
+    &__title {
+        font-family: $font2;
+        font-weight: 700;
+        font-size: 22px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        color: black;
+    }
+
+    hr {
+        margin-bottom: 41px;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: -22px;
+        margin-bottom: -22px;
+
+        & > * {
+            margin-top: 22px;
+            margin-bottom: 22px;
+        }
+    }
+
+    &__item {
+
+        display: flex;
+        align-items: center;
+
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+
+        &::before {
+            content: "";
+            background-image: url(../images/clipboard.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 69px;
+            width: 49px;
+            margin-right: 31px;
+            flex-shrink: 0;
+        }
+
+
+
+    }
+
+}
