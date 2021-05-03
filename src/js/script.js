@@ -2,7 +2,7 @@ $('.filters__button').click(
     function () {
         console.log( $(this).parent('filters') );
 
-        $(this).parent('filters').toggleClass('filters--open');
+        $(this).parent('.filters').toggleClass('filters--open');
     }
 )
 
