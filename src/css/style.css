@@ -595,6 +595,12 @@ main {
   color: black;
 }
 
+.request__form .form__input--gray {
+  background: #F5F5F5;
+  border-radius: 5px;
+  border: none;
+}
+
 .request__form .form__button {
   padding-top: 19px;
   padding-bottom: 19px;
@@ -604,6 +610,10 @@ main {
   font-weight: 700;
   border-radius: 5px;
   border: 1px solid #FFC444;
+}
+
+.request__form .form__button--yellow {
+  background-color: #FFC444;
 }
 
 .request__form .form__wrapper {
@@ -1182,7 +1192,7 @@ main {
   border: 2px solid #FFC444;
 }
 
-.button--order {
+.button--discover, .button--order {
   width: 100%;
   height: 68px;
   background-color: #FFC444;
@@ -1197,7 +1207,11 @@ main {
   transition: .3s ease all;
 }
 
-.button--order:hover {
+.button--discover {
+  margin-bottom: 56px;
+}
+
+.button--discover:hover, .button--order:hover {
   background-color: #6165D7;
   -webkit-box-shadow: 9px 9px 0px -2px white, 9px 9px 0px 0px #6165D7;
           box-shadow: 9px 9px 0px -2px white, 9px 9px 0px 0px #6165D7;
@@ -2145,5 +2159,281 @@ main {
   margin-right: 31px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+.final-price {
+  margin-bottom: 89px;
+}
+
+.final-price__image-wrapper {
+  margin-bottom: 23px;
+}
+
+.final-price__slogan {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: black;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.final-price hr {
+  margin-bottom: 29px;
+}
+
+.final-price__text {
+  font-weight: 500;
+  font-style: 16px;
+  color: black;
+}
+
+.nurses .title--nurses {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 43px;
+}
+
+.nurses__item {
+  margin-bottom: 35px;
+}
+
+.nurses__image-wrapper {
+  height: 246px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+
+.nurses__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.nurses__name {
+  font-weight: 700;
+  font-size: 20px;
+  color: black;
+}
+
+.nurses__age, .nurses__education, .nurses__reviews, .nurses__citizenship {
+  font-size: 19px;
+  font-weight: 500;
+  color: #6165D7;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.nurses__age::before, .nurses__education::before, .nurses__reviews::before, .nurses__citizenship::before {
+  color: black;
+  margin-right: 5px;
+}
+
+.nurses__age::before {
+  content: "Возраст:";
+}
+
+.nurses__education::before {
+  content: "Образование:";
+}
+
+.nurses__reviews::before {
+  content: "Отзывы:";
+}
+
+.nurses__citizenship::before {
+  content: "Гражданство:";
+}
+
+.nurses__citizenship {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nurses__citizenship--russia::after {
+  content: "Россия";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../images/russia.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 45px;
+  height: 34px;
+}
+
+.nurses__button {
+  height: 68px;
+  width: 100%;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  border: 3px solid #FFC444;
+  border-radius: 5px;
+}
+
+.nurses__show-more-wrapper {
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.nurses__show-more-button {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  width: 260px;
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 7px;
+  border-bottom: 3px solid #6165D7;
+  margin-top: 30px;
+  margin-bottom: 84px;
+}
+
+.nurses__show-more--open .nurses__show-more-wrapper {
+  height: inherit;
+  visibility: visible;
+  opacity: 1;
+}
+
+.nurses__about {
+  background: #FBFBFB;
+  border-radius: 5px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.nurses__about .title {
+  margin-bottom: 50px;
+}
+
+.nurses__about-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nurses__about-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.nurses__about-item::before {
+  content: "";
+  width: 75px;
+  height: 75px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 25px;
+}
+
+.nurses__about-item--test-covid::before {
+  background-image: url(../images/test-covid.svg);
+}
+
+.nurses__about-item--docs::before {
+  background-image: url(../images/docs.svg);
+}
+
+.nurses__about-item--emotion::before {
+  background-image: url(../images/emotion.svg);
+}
+
+.nurses__about-item--experience::before {
+  background-image: url(../images/experience.svg);
+}
+
+.nurses__about-item--skill::before {
+  background-image: url(../images/skill.svg);
+}
+
+.nurses__about-item--adequate::before {
+  background-image: url(../images/adequate.svg);
+}
+
+.nurses__responsibilities .title {
+  margin-bottom: 18px;
+}
+
+.nurses__responsibilities hr {
+  margin-bottom: 50px;
+}
+
+.nurses__responsibilities-items {
+  margin-bottom: 50px;
+}
+
+.nurses__responsibilities-item {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 52px;
+}
+
+.nurses__responsibilities-item::before {
+  content: "";
+  width: 55px;
+  height: 55px;
+  background-image: url(../images/star.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 22px;
+}
+
+.nurses__responsibilities .request {
+  background-color: #FBFBFB;
+  border-radius: 5px;
+  padding: 35px 28px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 44px;
+}
+
+.nurses__responsibilities .request__form {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.nurses__responsibilities .form__input {
+  border: 1px solid #DBDBDB;
 }
 /*# sourceMappingURL=style.css.map */

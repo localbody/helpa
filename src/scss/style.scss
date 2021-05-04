@@ -404,6 +404,12 @@ main {
                     font-size: 14px;
                     color: black;
                 }
+
+                &--gray {
+                    background: #F5F5F5;
+                    border-radius: 5px;
+                    border: none;
+                }
             }
 
             &__button {
@@ -415,6 +421,10 @@ main {
                 font-weight: 700;
                 border-radius: 5px;
                 border: 1px solid $yellow;
+
+                &--yellow {
+                    background-color: $yellow;
+                }
             }
 
             &__wrapper {
@@ -436,7 +446,6 @@ main {
    
 }
 // request ***
-
 
 // *** process
 .process {
@@ -975,6 +984,7 @@ main {
         border: 2px solid $yellow;
     }
 
+    &--discover,
     &--order {
         width: 100%;
         height: 68px;
@@ -990,6 +1000,13 @@ main {
         transition: .3s ease all;
     }
 
+    &--discover {
+        margin-bottom: 56px;
+    }
+
+    
+
+    &--discover:hover,
     &--order:hover {
         background-color: $bg-accent;
         box-shadow: 
@@ -1750,7 +1767,7 @@ main {
 }
 // *** includes
 
-
+// prices ***
 .prices {
 
     .title {     
@@ -1861,7 +1878,9 @@ main {
     }
 
 }
+// *** prices
 
+// prices-features ***
 .prices-features {
     background: #FBFBFB;
     border-radius: 5px;
@@ -1921,3 +1940,280 @@ main {
     }
 
 }
+// *** prices-features
+
+// final-price ***
+.final-price {
+
+    margin-bottom: 89px;
+
+    &__image-wrapper {
+        margin-bottom: 23px;
+    }
+
+    &__slogan {
+        font-size: 22px;
+        font-weight: 700;
+        font-family: $font2;
+        color: black;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+    }
+
+    hr {
+        margin-bottom: 29px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-style: 16px;
+        color: black;
+    }
+
+
+}
+// *** final-price
+
+
+// nurses ***
+.nurses {
+
+    .title--nurses {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 43px;
+    }
+
+    &__item {
+        margin-bottom: 35px;
+    }
+
+    &__image-wrapper {
+        height: 246px;
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 28px;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 20px;
+        color: black;
+    }
+
+    &__age,
+    &__education,
+    &__reviews,
+    &__citizenship {
+        font-size: 19px;
+        font-weight: 500;
+        color: $bg-accent;
+        margin-top: 18px;
+        margin-bottom: 18px;
+
+        &::before {
+            color: black;
+            margin-right: 5px;
+        }
+    }
+
+    &__age::before {
+        content: "Возраст:";
+    }
+    &__education::before {
+        content: "Образование:";
+    }
+    &__reviews::before {
+        content: "Отзывы:";
+    }
+    &__citizenship::before {
+        content: "Гражданство:";
+    }
+    
+    &__citizenship {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__citizenship--russia::after {
+        
+        content: "Россия";
+        display: flex;
+        align-items: center;
+        background-image: url(../images/russia.svg);
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-left: 45px;
+        height: 34px;
+    } 
+
+    &__button {
+        height: 68px;
+        width: 100%;
+        color:black;
+        font-size: 18px;
+        font-weight: 700;
+        border: 3px solid $yellow;
+        border-radius: 5px;
+    }
+
+
+    &__show-more {
+
+        &-wrapper {
+            height: 0;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease all;
+        }
+
+        &-button {
+            font-size: 20px;
+            font-weight: 500;
+            color: black;
+            width: 260px;
+            margin: 0 auto;
+            display: block;
+            padding-bottom: 7px;
+            border-bottom: 3px solid $bg-accent;
+            margin-top: 30px;
+            margin-bottom: 84px;
+        }
+
+        &--open .nurses__show-more-wrapper {
+            height: inherit;
+            visibility: visible;
+            opacity: 1;
+        }
+        
+    }
+
+
+    &__about {
+        background: #FBFBFB;
+        border-radius: 5px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
+
+        .title {
+            margin-bottom: 50px;
+        }
+
+        &-items {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        &-item {
+
+            display: flex;
+            align-items: center;
+            margin-bottom: 60px;
+            color: black;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+
+            &::before {
+                content: "";
+                width: 75px;
+                height: 75px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-right: 25px;
+            }
+
+            &--test-covid::before {
+                background-image: url(../images/test-covid.svg);
+            }
+            &--docs::before {
+                background-image: url(../images/docs.svg);
+            }
+            &--emotion::before {
+                background-image: url(../images/emotion.svg);
+            }
+            &--experience::before {
+                background-image: url(../images/experience.svg);
+            }
+            &--skill::before {
+                background-image: url(../images/skill.svg);
+            }
+            &--adequate::before {
+                background-image: url(../images/adequate.svg);
+            }
+
+
+        }
+
+    }
+
+    &__responsibilities {
+
+        .title {
+            margin-bottom: 18px;
+        }
+
+        hr {
+            margin-bottom: 50px;
+        }
+
+        &-items {
+
+            margin-bottom: 50px;
+        }
+
+        &-item {
+            font-size: 18px;
+            font-weight: 500;
+            color: black;
+            display: flex;
+            align-items: center;
+            margin-bottom: 52px;
+
+            &::before {
+                content: "";
+                width: 55px;
+                height: 55px;
+                background-image: url(../images/star.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-right: 22px;
+            }
+        }
+
+        .request {
+            background-color: #FBFBFB;
+            border-radius: 5px;
+            padding: 35px 28px;
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 44px;
+        }
+
+        .request__form {
+            box-shadow: none;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .form__input {
+            border: 1px solid #DBDBDB;
+        }
+
+    }
+
+}
+// *** nurses

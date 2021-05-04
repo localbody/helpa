@@ -1,3 +1,24 @@
+$('.nurses__show-more-button').click(
+    function () {
+
+        $('.nurses__show-more').toggleClass('nurses__show-more--open');
+
+        if ( $('.nurses__show-more').hasClass('nurses__show-more--open')) {
+            $(this).html('Скрыть')
+        } else {
+            $(this).html('Показать больше')
+
+            $("html").animate(
+                {
+                  scrollTop: $(".nurses__show-more").offset().top
+                },
+                800 //speed
+              );
+        }
+
+    }
+)
+
 $('.filters__button').click(
     function () {
         console.log( $(this).parent('filters') );
