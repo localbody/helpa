@@ -150,6 +150,10 @@ main {
     color: black;
     text-transform: uppercase;
 
+    &--recomended {
+        margin-bottom: 34px;
+    }
+
     &--services {
         margin-bottom: 71px;
     }
@@ -2193,27 +2197,201 @@ main {
                 margin-right: 22px;
             }
         }
+    }
 
-        .request {
-            background-color: #FBFBFB;
-            border-radius: 5px;
-            padding: 35px 28px;
-            margin-left: 0;
-            margin-right: 0;
-            margin-bottom: 44px;
-        }
+    .request {
+        background-color: #FBFBFB;
+        border-radius: 5px;
+        padding: 35px 28px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 44px;
+    }
 
-        .request__form {
-            box-shadow: none;
-            padding-left: 0;
-            padding-right: 0;
-        }
+    .title--consultation {
+        margin-bottom: 32px; 
+    }
 
-        .form__input {
-            border: 1px solid #DBDBDB;
+    .request__form {
+        box-shadow: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .form__input {
+        border: 1px solid #DBDBDB;
+    }    
+
+}
+// *** nurses
+
+// nurse ***
+.nurse {
+
+   &__image-wrapper {
+        height: 454px;
+        width: 100%;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 34px;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__wrapper {
+        font-size: 20px;
+        font-weight: 500;
+        color: black;
+        
+        display: flex;
+        flex-direction: column;
+
+        margin-top: -11px;
+        margin-bottom: 30px;
+
+        & > * {
+            margin-top: 11px;
+            margin-bottom: 11px;
         }
 
     }
 
+    &__name {
+        font-size: 22px;
+        font-weight: 700;
+        color: black;
+        text-transform: uppercase;
+    }
+
+    &__info {
+        color: #616161;
+    }
+
+    &__age {
+        color: $bg-accent;
+        &::before {
+            content: "Возраст:";
+            margin-right: 5px;
+            color: black;
+        }
+    }
+
+    &__price {
+        font-size: 24px;
+        font-weight: 700;
+        color: $bg-accent;
+
+        &::before {
+            content: "Цена:";
+            color: black;
+            font-size: 20px;
+            font-weight: 500;
+            margin-right: 5px;
+        }
+
+        &::after {
+            content: "руб/мес";
+            color: black;
+            font-size: 20px;
+            font-weight: 500;
+            margin-left: 5px;
+        }
+    }
+
+
+    &__citizenship {
+        &::before {
+        content: "Россия";
+        display: flex;
+        align-items: center;
+        background-image: url(../images/russia.svg);
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-left: 45px;
+        height: 34px;    
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+        }
+    }
+
+    &__for-accommodation {
+        color: $bg-accent;
+
+        &::before {
+            content: "На проживание:";
+            margin-right: 5px;
+            color: black;
+        }
+    }
+
+    &__reviews {
+        color: $bg-accent;
+
+        &::before {
+            content: "Отзывы:";
+            margin-right: 5px;
+            color: black;
+        }
+    }
+
+    &__education {
+        color: $bg-accent;
+
+        &::before {
+            content: "Образование:";
+            margin-right: 5px;
+            color: black;
+        }
+    }
+
+
+    &__responsibilities {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: -11px;
+        margin-bottom: 20px;
+
+        & > * {
+            margin-top: 11px;
+            margin-bottom: 11px;
+        }
+    }
+
+    &__responsibilities-item {
+        display: flex;
+        align-items: center;
+        
+        &::before {
+            content: "";
+            width: 37px;
+            height: 37px;
+            background-image: url(../images/star.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin-right: 21px;
+        }
+
+        font-size: 18px;
+        font-weight: 500;
+        color: black;
+    }
+
+    &__about {
+        font-style: 16px;
+        font-weight: 500;
+        color: black;
+        margin-bottom: 38px;
+    }
+
+
 }
-// *** nurses
+// *** nurse
+

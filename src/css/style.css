@@ -328,6 +328,10 @@ main {
   text-transform: uppercase;
 }
 
+.title--recomended {
+  margin-bottom: 34px;
+}
+
 .title--services {
   margin-bottom: 71px;
 }
@@ -2417,7 +2421,7 @@ main {
   margin-right: 22px;
 }
 
-.nurses__responsibilities .request {
+.nurses .request {
   background-color: #FBFBFB;
   border-radius: 5px;
   padding: 35px 28px;
@@ -2426,14 +2430,192 @@ main {
   margin-bottom: 44px;
 }
 
-.nurses__responsibilities .request__form {
+.nurses .title--consultation {
+  margin-bottom: 32px;
+}
+
+.nurses .request__form {
   -webkit-box-shadow: none;
           box-shadow: none;
   padding-left: 0;
   padding-right: 0;
 }
 
-.nurses__responsibilities .form__input {
+.nurses .form__input {
   border: 1px solid #DBDBDB;
+}
+
+.nurse__image-wrapper {
+  height: 454px;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 34px;
+}
+
+.nurse__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.nurse__wrapper {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -11px;
+  margin-bottom: 30px;
+}
+
+.nurse__wrapper > * {
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+
+.nurse__name {
+  font-size: 22px;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+}
+
+.nurse__info {
+  color: #616161;
+}
+
+.nurse__age {
+  color: #6165D7;
+}
+
+.nurse__age::before {
+  content: "Возраст:";
+  margin-right: 5px;
+  color: black;
+}
+
+.nurse__price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #6165D7;
+}
+
+.nurse__price::before {
+  content: "Цена:";
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.nurse__price::after {
+  content: "руб/мес";
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.nurse__citizenship::before {
+  content: "Россия";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../images/russia.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 45px;
+  height: 34px;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.nurse__for-accommodation {
+  color: #6165D7;
+}
+
+.nurse__for-accommodation::before {
+  content: "На проживание:";
+  margin-right: 5px;
+  color: black;
+}
+
+.nurse__reviews {
+  color: #6165D7;
+}
+
+.nurse__reviews::before {
+  content: "Отзывы:";
+  margin-right: 5px;
+  color: black;
+}
+
+.nurse__education {
+  color: #6165D7;
+}
+
+.nurse__education::before {
+  content: "Образование:";
+  margin-right: 5px;
+  color: black;
+}
+
+.nurse__responsibilities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -11px;
+  margin-bottom: 20px;
+}
+
+.nurse__responsibilities > * {
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+
+.nurse__responsibilities-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+}
+
+.nurse__responsibilities-item::before {
+  content: "";
+  width: 37px;
+  height: 37px;
+  background-image: url(../images/star.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 21px;
+}
+
+.nurse__about {
+  font-style: 16px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 38px;
 }
 /*# sourceMappingURL=style.css.map */
