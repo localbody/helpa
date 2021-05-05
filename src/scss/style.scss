@@ -1,3 +1,7 @@
+@import 'vars';
+@import 'fonts';
+@import 'popup';
+
 html {
     box-sizing: border-box;
 }
@@ -6,6 +10,10 @@ html {
 *::after,
 *::before {
     box-sizing: border-box;
+}
+
+*:focus {
+    outline: 2px solid $bg-accent;
 }
 
 p,
@@ -47,9 +55,9 @@ input[type=file] {
     height: 0;
 }
 
-@import 'vars';
-@import 'fonts';
-@import 'popup';
+textarea {
+    resize: none;
+}
  
 body {
     min-width: 480px;
@@ -150,7 +158,7 @@ main {
     color: black;
     text-transform: uppercase;
 
-    &--recomended {
+    &--recommended {
         margin-bottom: 34px;
     }
 
@@ -169,6 +177,14 @@ main {
     &__image-wrapper {
         width: 386px;
         height: 322px;
+    }
+
+    &--page-services {
+        margin-bottom: 30px;
+
+        .banner__image-wrapper {
+            height: 497px;
+        }
     }
 
     &__image {
@@ -1218,6 +1234,7 @@ main {
 
     &__items {
         display: flex;
+        flex-wrap: wrap;
     }
 
     &__item {
@@ -2395,3 +2412,262 @@ main {
 }
 // *** nurse
 
+// contacts ***
+.contacts {
+    margin-bottom: 56px;
+
+    .title {
+        font-family: $font2;
+        font-size: 30px;
+        font-weight: 700;
+        color: black;
+        margin-bottom: 46px;
+    }
+
+    &__items {
+        margin-bottom: 52px;
+    }
+
+    &__map-wrapper {
+        height: 172px;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 35px;
+    }
+
+    &__map-image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+        color: black;
+        text-transform: uppercase;
+        margin-bottom: 11px;
+    }
+
+    &__content {
+        color: $bg-accent;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 25px;
+
+        &--wrap {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--how {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            color:black;
+        }
+    }
+
+    &__links {
+        display: flex;
+
+    }
+
+    &__link {
+        width: 37px;
+        height: 37px;
+        margin-right: 29px;
+        display: block;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        &--telegram {
+            background-image: url(../images/telegram.svg);
+        }
+
+        &--viber {
+            background-image: url(../images/viber.svg);
+        }
+
+        &--whatsapp {
+            background-image: url(../images/whatsapp-square.svg);
+        }
+    }
+
+    &__form {
+        .title {
+            margin-top: 14px;
+            margin-bottom: 41px;
+            font-family: $font2;
+            color: black;
+            font-size: 22px;
+            font-weight: 700;
+        }
+    }
+
+    .form {
+        &__input {
+            background: #F7F7F7;
+            border-radius: 5px;
+            height: 60px;
+            width: 100%;
+            color: black;
+            padding: 20px 27px;
+            border: none;
+            margin-bottom: 42px;
+            margin-bottom: 20px;
+
+            &::placeholder {
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+
+        &__textarea {
+            background: #F7F7F7;
+            border-radius: 5px;
+            height: 200px;
+            width: 100%;
+            color: black;
+            padding: 20px 27px;
+            border: none;
+            margin-bottom: 29px;
+
+            &::placeholder {
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+
+        &__button {
+            border-radius: 5px;
+            background-color: $yellow;
+            color: black;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 700;
+            height: 65px;
+            width: 100%;
+            margin-bottom: 25px;
+        }
+
+        &__agreement {
+            font-size: 16px;
+            font-weight: 400;
+            color: black;
+            
+            &-link {
+                text-decoration: none;
+                color: $bg-accent;
+                font-weight: 500;
+            }
+
+            span {
+                color: $bg-accent;
+                font-weight: 500;
+            }
+        }
+    }
+}
+// *** contacts
+
+
+// page-services ***
+.page-services {
+    
+    .service {
+
+        .title {
+            margin-bottom: 8px;
+        }
+
+        &__price {
+            color: $bg-accent;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 30px;
+
+            &::before {
+                content: "Заработная плата:";
+                margin-right: 5px;
+                font-size: 18px;
+                font-weight: 500;
+                color: black;
+            }
+
+            &::after {
+                content: "руб/мес";
+                margin-left: 5px;
+                font-size: 18px;
+                font-weight: 500;
+                color: black;
+            }
+        }
+
+        &__items {
+            &-wrapper {
+                height: 0;
+                visibility: hidden;
+                opacity: 0;
+                transition: 0.3s ease all;
+
+                &--open {
+                    height: initial;
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+
+        }
+
+        &__item {
+            color: black;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+            margin-bottom: 22px;
+            display: flex;
+            align-items: center;
+
+            &::before {
+                content: "";
+                background-image: url(../images/star.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 37px;
+                height: 37px;
+                margin-right: 15px;
+
+
+            }
+        }
+
+        &__show-more {
+            color: black;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            width: 100%;
+            height: 48px;
+            border-bottom: 2px dashed $bg-accent;
+            margin-bottom: 34px;
+        }
+
+        &__link {
+            color: $bg-accent;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 22px;
+            text-decoration: none;
+            border-bottom: 1px dashed $bg-accent;
+            display: block;
+            
+            margin-bottom: 30px;
+        }
+
+    }
+
+}
+// *** page-services

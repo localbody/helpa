@@ -1,60 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-ol,
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-i {
-  font-style: normal;
-}
-
-button {
-  background-color: transparent;
-  border: none;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-}
-
-input[type=file] {
-  outline: 0;
-  opacity: 0;
-  pointer-events: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  width: 0;
-  height: 0;
-}
-
 .popup {
   position: fixed;
   width: 100%;
@@ -225,6 +171,68 @@ input[type=file] {
   margin: 0 auto 40px auto;
 }
 
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:focus {
+  outline: 2px solid #6165D7;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+i {
+  font-style: normal;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+input[type=file] {
+  outline: 0;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 0;
+  height: 0;
+}
+
+textarea {
+  resize: none;
+}
+
 body {
   min-width: 480px;
   font-family: 'Montserrat', sans-serif;
@@ -328,7 +336,7 @@ main {
   text-transform: uppercase;
 }
 
-.title--recomended {
+.title--recommended {
   margin-bottom: 34px;
 }
 
@@ -343,6 +351,14 @@ main {
 .banner__image-wrapper {
   width: 386px;
   height: 322px;
+}
+
+.banner--page-services {
+  margin-bottom: 30px;
+}
+
+.banner--page-services .banner__image-wrapper {
+  height: 497px;
 }
 
 .banner__image {
@@ -1434,6 +1450,8 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .breadcrumbs__item {
@@ -2617,5 +2635,284 @@ main {
   font-weight: 500;
   color: black;
   margin-bottom: 38px;
+}
+
+.contacts {
+  margin-bottom: 56px;
+}
+
+.contacts .title {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 46px;
+}
+
+.contacts__items {
+  margin-bottom: 52px;
+}
+
+.contacts__map-wrapper {
+  height: 172px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 35px;
+}
+
+.contacts__map-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.contacts__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: 11px;
+}
+
+.contacts__content {
+  color: #6165D7;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.contacts__content--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacts__content--how {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: black;
+}
+
+.contacts__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts__link {
+  width: 37px;
+  height: 37px;
+  margin-right: 29px;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contacts__link--telegram {
+  background-image: url(../images/telegram.svg);
+}
+
+.contacts__link--viber {
+  background-image: url(../images/viber.svg);
+}
+
+.contacts__link--whatsapp {
+  background-image: url(../images/whatsapp-square.svg);
+}
+
+.contacts__form .title {
+  margin-top: 14px;
+  margin-bottom: 41px;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: black;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.contacts .form__input {
+  background: #F7F7F7;
+  border-radius: 5px;
+  height: 60px;
+  width: 100%;
+  color: black;
+  padding: 20px 27px;
+  border: none;
+  margin-bottom: 42px;
+  margin-bottom: 20px;
+}
+
+.contacts .form__input::-webkit-input-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contacts .form__input:-ms-input-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contacts .form__input::-ms-input-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contacts .form__input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contacts .form__textarea {
+  background: #F7F7F7;
+  border-radius: 5px;
+  height: 200px;
+  width: 100%;
+  color: black;
+  padding: 20px 27px;
+  border: none;
+  margin-bottom: 29px;
+}
+
+.contacts .form__textarea::-webkit-input-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contacts .form__textarea:-ms-input-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contacts .form__textarea::-ms-input-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contacts .form__textarea::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contacts .form__button {
+  border-radius: 5px;
+  background-color: #FFC444;
+  color: black;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  height: 65px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.contacts .form__agreement {
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+}
+
+.contacts .form__agreement-link {
+  text-decoration: none;
+  color: #6165D7;
+  font-weight: 500;
+}
+
+.contacts .form__agreement span {
+  color: #6165D7;
+  font-weight: 500;
+}
+
+.page-services .service .title {
+  margin-bottom: 8px;
+}
+
+.page-services .service__price {
+  color: #6165D7;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.page-services .service__price::before {
+  content: "Заработная плата:";
+  margin-right: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+}
+
+.page-services .service__price::after {
+  content: "руб/мес";
+  margin-left: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+}
+
+.page-services .service__items-wrapper {
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.page-services .service__items-wrapper--open {
+  height: initial;
+  visibility: visible;
+  opacity: 1;
+}
+
+.page-services .service__item {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-services .service__item::before {
+  content: "";
+  background-image: url(../images/star.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 37px;
+  height: 37px;
+  margin-right: 15px;
+}
+
+.page-services .service__show-more {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  height: 48px;
+  border-bottom: 2px dashed #6165D7;
+  margin-bottom: 34px;
+}
+
+.page-services .service__link {
+  color: #6165D7;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  text-decoration: none;
+  border-bottom: 1px dashed #6165D7;
+  display: block;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=style.css.map */

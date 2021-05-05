@@ -1,3 +1,9 @@
+$('.service__show-more').click(
+    function () {
+        $('.service__items-wrapper').toggleClass('service__items-wrapper--open');
+    }
+)
+
 $('.nurses__show-more-button').click(
     function () {
 
