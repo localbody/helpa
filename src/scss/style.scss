@@ -802,6 +802,28 @@ main {
         flex-flow: row-reverse;
     }
 }
+
+@media screen and (min-width: 1920px) { 
+
+    .process {
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;            
+
+
+        hr {
+            width: 110px;
+            height: 10px;
+            border-radius: 20px;
+
+        }
+
+    }
+
+}
+
+
 // process ***
 
 // features ***
