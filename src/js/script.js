@@ -1,3 +1,31 @@
+$('.archive__item').click(
+    function (e) {
+
+        if ( $(this).hasClass('archive__item--active') ) {
+            $(this).removeClass('archive__item--active');
+        } else {
+            $('.archive__item.archive__item--active').removeClass('archive__item--active');
+            $(this).addClass('archive__item--active');
+        }
+    }
+)
+
+
+$('.archive__sub-item').click(
+    function (e) {
+        
+        e.stopPropagation();
+
+        if ( $(this).hasClass('archive__sub-item--active') ) {
+            $(this).removeClass('archive__sub-item--active');
+        } else {
+            $('.archive__sub-item.archive__sub-item--active').removeClass('archive__sub-item--active');
+            $(this).addClass('archive__sub-item--active');
+        }
+
+    }
+)
+
 $('.service__show-more').click(
     function () {
         $('.service__items-wrapper').toggleClass('service__items-wrapper--open');
