@@ -1226,6 +1226,40 @@ main {
   background-image: url(../images/features-diagnosis.svg);
 }
 
+.features__item--24per7::before {
+  background-image: url(../images/features-24per7.svg);
+}
+
+@media screen and (min-width: 1920px) {
+  .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .features .title {
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+  .features__subtitle {
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 69px;
+  }
+  .features__items {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .transfer {
   margin-bottom: 118px;
 }

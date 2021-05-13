@@ -1036,7 +1036,35 @@ main {
     &__item--diagnosis::before {
         background-image: url(../images/features-diagnosis.svg);
     }
+    &__item--24per7::before {
+        background-image: url(../images/features-24per7.svg);
+    }
 
+}
+
+@media screen and (min-width: 1920px) {
+    .features {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title {
+            font-size: 36px;
+            margin-bottom: 25px;
+        }
+
+        &__subtitle {
+            font-size: 22px;
+            line-height: 27px;
+            margin-bottom: 69px;
+        }
+
+        &__items {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
 }
 // *** features
 
