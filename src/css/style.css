@@ -762,7 +762,7 @@ main {
   }
 }
 
-.services {
+.services__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -774,7 +774,7 @@ main {
   margin-bottom: 31px;
 }
 
-.services > * {
+.services__wrapper > * {
   margin-top: 11px;
   margin-bottom: 11px;
 }

@@ -595,18 +595,22 @@ main {
 
 // services ***
 .services {
-    display: flex;
-    flex-direction: column;
-    
-    // row-gap: 22px;
-    margin-top: -11px;
-    margin-bottom: 31px;
-    // margin-bottom: 42px;
 
-    & > * {
-        margin-top: 11px;
-        margin-bottom: 11px;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        
+        // row-gap: 22px;
+        margin-top: -11px;
+        margin-bottom: 31px;
+        // margin-bottom: 42px;
+    
+        & > * {
+            margin-top: 11px;
+            margin-bottom: 11px;
+        }
     }
+
 
     .service {
         height: 253px;
