@@ -271,6 +271,7 @@ main {
 
     &--recommended {
         margin-bottom: 34px;
+        font-family: $font2;
     }
 
     &--services {
@@ -789,6 +790,16 @@ main {
         }
     
     }
+
+    &--our-nurses {
+        .title {
+            margin-bottom: 38px;
+        }
+
+        .request__form {
+            box-shadow: none;
+        }
+    }
    
 }
 
@@ -841,6 +852,27 @@ main {
 
         }
 
+    }
+
+    .request--form-nurse {
+
+        flex-direction: column;
+
+        .container {
+            min-width: 100%;
+        }
+
+        .title--consultation {
+            font-size: 36px;
+            line-height: 44px;
+            margin-bottom: 38px;
+        }
+
+        .form__wrapper {
+            display: grid;
+            grid-template-columns: 469px 496px 300px;
+            column-gap: 30px;
+        }
     }
 }
 
@@ -1143,6 +1175,17 @@ main {
             position: absolute;
             top: 0;
             right: 0;
+        }
+
+    }
+
+    .features--services {
+
+        .features__subtitle {
+            width: 742px;
+            font-size: 22px;
+            line-height: 27px;
+            text-align: center;
         }
 
     }
@@ -2114,6 +2157,13 @@ main {
     }
 
 }
+
+@media screen and (min-width: 1920px) {
+    .breadcrumbs {
+        font-size: 18px;
+    }
+}
+
 // *** breadcrumbs
 
 // reviews ***
@@ -2162,6 +2212,48 @@ main {
         }
     }
 
+}
+
+@media screen and (min-width: 1920px) { 
+    .reviews {
+
+        margin-bottom: 236px;
+
+        .title {
+            font-size: 50px;
+            line-height: 61px;
+        }
+
+        &__items {
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            margin-left: -15px;
+            margin-right: -15px;
+
+            & > * {
+                margin-right: 15px;
+                margin-left: 15px;
+            }
+        }
+        
+
+        &__item {
+            width: 630px;
+
+            &-text {
+                padding: 46px 41px;
+
+                font-size: 18px;
+                line-height: 22px;
+            }
+
+            &-author {
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+    }
 }
 
 // *** reviews
@@ -2264,6 +2356,14 @@ main {
 }
 
 @media screen and (min-width: 1920px) {
+    .faq {
+        .title {
+            font-size: 50px;
+            line-height: 70px;
+            margin-bottom: 52px;
+        }
+    }
+
     .faq--index {
         .title {
             text-align: center;
@@ -2376,6 +2476,67 @@ main {
     }
 
 }
+
+@media screen and (min-width: 1920px) {
+    .vacancies {
+
+        .title {
+            font-size: 50px;
+            line-height: 61px;
+            margin-bottom: 69px;
+        }
+
+
+        &__items {
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+            margin-right: -15px;
+            margin-left: -15px;
+
+            & > * {
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+
+        }
+
+        &__item {
+            width: 410px;
+        }
+
+        &__item-date {
+            font-size: 18px;
+        }
+
+        &__item-title {
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        &__item-money {
+            font-size: 18px;
+            line-height: 22px;
+
+            span {
+                font-size: 30px;
+                line-height: 37px;
+            }
+        }
+
+        &__item-where {
+            font-size: 18px;
+        }
+
+        &__item-text {
+            font-size: 15px;
+            line-height: 22px;
+            margin-bottom: 44px;
+        }
+
+    }
+}
+
 // *** vacancies
 
 // articles ***
@@ -2603,7 +2764,6 @@ main {
 }
 
 @media screen and (min-width: 1920px) {
-    
     .articles--usefull {
 
         .title {
@@ -2630,7 +2790,6 @@ main {
 
 
     }
-
     .articles {
 
         .filters {
@@ -2917,7 +3076,6 @@ main {
 
 
     }
-    
 }
 
 // *** articles
@@ -2988,6 +3146,46 @@ main {
     }
 
 }
+
+@media screen and (min-width: 1920px) {
+    .includes {
+
+        .title {
+            font-size: 36px;
+            line-height: 44px;
+            text-align: center;
+            width: 818px;
+            margin: 0 auto;
+
+            margin-bottom: 52px;
+        }
+
+        &__item {
+            font-size: 23px;
+            line-height: 27px;
+            flex-grow: 1;
+            width: 25%;
+            
+
+        }
+
+        &__items {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            margin-right: -30px;
+            margin-left: -30px;
+            
+            & > * {
+                margin-right: 30px;
+                margin-left: 30px;
+            }
+        }
+        
+    }
+}
+
 // *** includes
 
 // prices ***
@@ -3101,6 +3299,51 @@ main {
     }
 
 }
+
+@media screen and (min-width: 1920px) {
+
+    .prices {
+
+        .title {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 23px;
+        }
+
+        hr {
+            margin: 0 auto;
+            margin-bottom: 59px;
+        }
+
+        &__items {
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            justify-content: space-between;
+        }
+
+        &__item {
+            width: 408px;
+            // height: 392px;
+
+            &-title {
+                font-size: 24px;
+            }
+
+            &-value {
+                font-size: 28px;
+
+                &::before,
+                &::after {
+                    font-size: 21px;
+                }
+            }
+        }
+
+    }
+
+}
+
 // *** prices
 
 // prices-features ***
@@ -3163,6 +3406,44 @@ main {
     }
 
 }
+@media screen and (min-width: 1920px) { 
+    
+    .prices-features {
+
+        &__title {
+            font-size: 36px;
+            line-height: 47px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        hr {
+            margin-bottom: 50px;
+        }
+
+        &__items {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            margin-right: -30px;
+            margin-left: -30px;
+
+            & > * {
+                margin-right: 30px;
+                margin-left: 30px;
+            }
+
+        }
+
+        &__item {
+            width: 25%;
+        }
+
+    }
+
+}
+
 // *** prices-features
 
 // final-price ***
@@ -3172,6 +3453,12 @@ main {
 
     &__image-wrapper {
         margin-bottom: 23px;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 
     &__slogan {
@@ -3195,8 +3482,71 @@ main {
 
 
 }
-// *** final-price
+@media screen and (min-width: 1920px) {
+    .final-price {
 
+        margin-bottom: 110px;
+
+        &__inner{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items:center;
+
+            margin-bottom: 96px;
+        }
+
+        &__image-wrapper {
+            width: 506px;
+            height: 475px;
+        }
+
+        &__wrapper {
+            width: 690px;
+            margin-right: 94px;
+
+            hr {
+                margin: 0;
+                margin-bottom: 26px;
+            }
+
+            .button--discover {
+                width: 410px;
+            }
+        }
+
+        &__slogan {
+            font-size: 36px;
+            line-height: 43px;
+            margin-bottom: 41px;
+
+        }
+
+        &__text {
+            font-size: 22px;
+            line-height: 36px;
+        }
+    }
+
+    .final-price--services {
+        
+        display: flex;
+        align-items: center;
+
+        .final-price__image-wrapper {
+            width: 506px;
+            height: 475px;
+            margin-right: 89px;
+        }
+
+        .final-price__wrapper {
+            margin-right: 0;
+        }
+
+    }
+
+
+}
+// *** final-price
 
 // nurses ***
 .nurses {
@@ -3356,6 +3706,7 @@ main {
                 background-repeat: no-repeat;
                 background-size: contain;
                 margin-right: 25px;
+                flex-shrink: 0;
             }
 
             &--test-covid::before {
@@ -3414,6 +3765,7 @@ main {
                 background-repeat: no-repeat;
                 background-size: contain;
                 margin-right: 22px;
+                flex-shrink: 0;
             }
         }
     }
@@ -3442,6 +3794,94 @@ main {
     }    
 
 }
+
+@media screen and (min-width: 1920px) {
+    .nurses {
+
+        .title--nurses {
+            font-size: 50px;
+            line-height: 61px;
+        }
+
+        &__show-more-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .request {
+            padding: 0;
+        }
+
+        .request__wrapper {
+            width: 100%;
+            height: 70px;
+        }
+
+        .title--recommended {
+            font-size: 36px;
+            line-height: 44px;
+            margin-bottom: 55px;
+        }
+
+        &__items {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__item {
+            width: 412px;
+        }
+
+        &__about {
+
+            margin-bottom: 75px;
+
+            .title {
+                font-size: 36px;
+                line-height: 44px;
+                margin-bottom: 50px;
+            }
+
+            &-items {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+            }
+
+            &-item {
+                width: 30%;
+                font-size: 22px;
+                line-height: 27px;
+            }
+        }
+
+        &__responsibilities {
+
+            hr {
+                margin-bottom: 20px;
+            }
+
+            .title {
+                font-size: 36px;
+                line-height: 44px;
+                margin-bottom: 75px;
+            }
+
+            &-items {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            &-item {
+                width: 47%;
+            }
+        }
+        
+    }
+}
+
 // *** nurses
 
 // nurse ***
@@ -3596,6 +4036,7 @@ main {
             background-position: center;
             background-size: contain;
             margin-right: 21px;
+            flex-shrink: 0;
         }
 
         font-size: 18px;
@@ -3611,6 +4052,85 @@ main {
     }
 
 
+}
+
+@media screen and (min-width: 1920px) {
+    .nurse {
+        display: flex;
+        margin-bottom: 78px;
+
+        &__image-wrapper {
+            height: 665px;
+            width: 488px;
+            margin-right: 60px;
+            flex-shrink: 0;
+            align-self: center;
+        }
+
+        &__name {
+            font-size: 30px;
+            // line-height: 37px;
+            margin-bottom: 5px;
+        }
+
+        &__info {
+            font-size: 24px;
+            line-height: 30px;
+        }
+
+        &__age {
+            font-size: 24px;
+            line-height: 30px;
+        }
+
+        &__price {
+            font-size: 30px;
+            line-height: 37px;
+
+            &::before,
+            &::after {
+                font-size: 24px;
+                line-height: 29px;
+            }
+        }
+
+        &__citizenship {
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        &__for-accommodation {
+            font-size: 24px;
+            line-height: 30px;
+        }
+
+        &__education {
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        &__desc {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 50px;
+            row-gap: 15px;
+        }
+
+        &__responsibilities-items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 75px;
+            row-gap: 15px;
+
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__about {
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
 }
 // *** nurse
 
@@ -3886,7 +4406,6 @@ main {
 
 }
 
-
 // *** contacts
 
 
@@ -3986,7 +4505,7 @@ main {
                 width: 37px;
                 height: 37px;
                 margin-right: 15px;
-
+                flex-shrink: 0;
 
             }
         }
@@ -4105,6 +4624,167 @@ main {
     }
 
 
+
+}
+
+@media screen and (min-width: 1920px) {
+
+    .page-services {
+        
+        .title {
+            margin-bottom: 25px;
+        }
+        
+        .service__inner {
+            display: flex;
+            margin-bottom: 51px;
+            margin-top: 70px;
+        }
+
+        .banner--page-services {
+            margin-bottom: 0;
+        }
+
+        .banner__image-wrapper {
+            width: 478px;
+            height: 612px;
+            margin-right: 72px;
+        }
+
+
+        .service__wrapper {
+            .title {
+                font-size: 46px;
+                line-height: 59px;
+            }
+            
+            .service__price {
+                font-size: 36px;
+                line-height: 44px;
+
+                &::before,
+                &::after {
+                    font-size: 30px;
+                }
+            }
+
+            .service__items,
+            .service__items-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+
+                margin-right: -25px;
+                margin-left: -25px;
+
+                & > * {
+                    margin-left: 25px;
+                    margin-right: 25px;
+                }
+            }
+
+            .service__item {
+                width: 40%;
+            }
+
+            .service__links {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            .service__link {
+                width: 48%;
+
+            }
+
+            .button--discover {
+                width: 410px;
+                height: 84px;
+
+            }
+
+        }
+
+        .service__text {
+            font-size: 22px;
+            line-height: 31px;
+            margin-bottom: 110px;
+        }
+
+        .service__info-items {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+
+        .service__info-item {
+            flex-direction: column;
+            text-align: center;
+            width: 24%;
+
+            &::before {
+                margin-bottom: 25px;
+            }
+        }
+
+        .about__inner {
+
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            margin-bottom: 72px;
+
+            .banner--page-services-about {
+                margin-bottom: 0;
+            }
+
+            .banner__image-wrapper {
+                width: 610px;
+                height: 440px;
+                margin-right: 0;
+                margin-left: 135px;
+            }
+
+            .about__wrapper {
+                hr {
+                    margin-bottom: 34px;
+                }
+
+                .title {
+                    font-size: 36px;
+                    line-height: 43px;
+                    margin-bottom: 38px;
+                }
+
+                .service__item {
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+            }
+
+        }
+
+        .service__articles {
+            .title {
+                font-size: 36px;
+                line-height: 44px;
+            }
+
+            &-wrapper {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        .service__article {
+            width: 300px;
+        }
+
+        .service__image-wrapper {
+            height: 193px;
+        }
+
+    }
 
 }
 // *** page-services

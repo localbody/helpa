@@ -1371,12 +1371,6 @@ main {
     top: 0;
     right: 0;
   }
-  .features--services .features__subtitle {
-    width: 742px;
-    font-size: 22px;
-    line-height: 27px;
-    text-align: center;
-  }
 }
 
 .cooperation {
@@ -2347,12 +2341,6 @@ main {
   margin-right: 5px;
 }
 
-@media screen and (min-width: 1920px) {
-  .breadcrumbs {
-    font-size: 18px;
-  }
-}
-
 .reviews {
   margin-bottom: 112px;
 }
@@ -2395,42 +2383,6 @@ main {
   font-weight: 700;
   color: black;
   font-family: "Montserrat Alternates", sans-serif;
-}
-
-@media screen and (min-width: 1920px) {
-  .reviews {
-    margin-bottom: 236px;
-  }
-  .reviews .title {
-    font-size: 50px;
-    line-height: 61px;
-  }
-  .reviews__items {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
-  }
-  .reviews__items > * {
-    margin-right: 15px;
-    margin-left: 15px;
-  }
-  .reviews__item {
-    width: 630px;
-  }
-  .reviews__item-text {
-    padding: 46px 41px;
-    font-size: 18px;
-    line-height: 22px;
-  }
-  .reviews__item-author {
-    font-size: 18px;
-    line-height: 22px;
-  }
 }
 
 .faq {
@@ -2647,54 +2599,6 @@ main {
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 5px;
-}
-
-@media screen and (min-width: 1920px) {
-  .vacancies .title {
-    font-size: 50px;
-    line-height: 61px;
-    margin-bottom: 69px;
-  }
-  .vacancies__items {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-  }
-  .vacancies__items > * {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  .vacancies__item {
-    width: 410px;
-  }
-  .vacancies__item-date {
-    font-size: 18px;
-  }
-  .vacancies__item-title {
-    font-size: 24px;
-    line-height: 29px;
-  }
-  .vacancies__item-money {
-    font-size: 18px;
-    line-height: 22px;
-  }
-  .vacancies__item-money span {
-    font-size: 30px;
-    line-height: 37px;
-  }
-  .vacancies__item-where {
-    font-size: 18px;
-  }
-  .vacancies__item-text {
-    font-size: 15px;
-    line-height: 22px;
-    margin-bottom: 44px;
-  }
 }
 
 .articles .title {
@@ -3574,13 +3478,6 @@ main {
   margin-bottom: 23px;
 }
 
-.final-price__image {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .final-price__slogan {
   font-size: 22px;
   font-weight: 700;
@@ -3598,65 +3495,6 @@ main {
   font-weight: 500;
   font-style: 16px;
   color: black;
-}
-
-@media screen and (min-width: 1920px) {
-  .final-price {
-    margin-bottom: 110px;
-  }
-  .final-price__inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 96px;
-  }
-  .final-price__image-wrapper {
-    width: 506px;
-    height: 475px;
-  }
-  .final-price__wrapper {
-    width: 690px;
-    margin-right: 94px;
-  }
-  .final-price__wrapper hr {
-    margin: 0;
-    margin-bottom: 26px;
-  }
-  .final-price__wrapper .button--discover {
-    width: 410px;
-  }
-  .final-price__slogan {
-    font-size: 36px;
-    line-height: 43px;
-    margin-bottom: 41px;
-  }
-  .final-price__text {
-    font-size: 22px;
-    line-height: 36px;
-  }
-  .final-price--services {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .final-price--services .final-price__image-wrapper {
-    width: 506px;
-    height: 475px;
-    margin-right: 89px;
-  }
-  .final-price--services .final-price__wrapper {
-    margin-right: 0;
-  }
 }
 
 .nurses .title--nurses {
@@ -3888,8 +3726,6 @@ main {
   background-repeat: no-repeat;
   background-size: contain;
   margin-right: 22px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
 }
 
 .nurses .request {
@@ -4164,8 +4000,6 @@ main {
   background-position: center;
   background-size: contain;
   margin-right: 21px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
 }
 
 .nurse__about {
@@ -4656,8 +4490,6 @@ main {
   width: 37px;
   height: 37px;
   margin-right: 15px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
 }
 
 .page-services .service__show-more {
@@ -4784,152 +4616,6 @@ main {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-@media screen and (min-width: 1920px) {
-  .page-services .title {
-    margin-bottom: 25px;
-  }
-  .page-services .service__inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 51px;
-    margin-top: 70px;
-  }
-  .page-services .banner--page-services {
-    margin-bottom: 0;
-  }
-  .page-services .banner__image-wrapper {
-    width: 478px;
-    height: 612px;
-    margin-right: 72px;
-  }
-  .page-services .service__wrapper .title {
-    font-size: 46px;
-    line-height: 59px;
-  }
-  .page-services .service__wrapper .service__price {
-    font-size: 36px;
-    line-height: 44px;
-  }
-  .page-services .service__wrapper .service__price::before, .page-services .service__wrapper .service__price::after {
-    font-size: 30px;
-  }
-  .page-services .service__wrapper .service__items,
-  .page-services .service__wrapper .service__items-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-right: -25px;
-    margin-left: -25px;
-  }
-  .page-services .service__wrapper .service__items > *,
-  .page-services .service__wrapper .service__items-wrapper > * {
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-  .page-services .service__wrapper .service__item {
-    width: 40%;
-  }
-  .page-services .service__wrapper .service__links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .page-services .service__wrapper .service__link {
-    width: 48%;
-  }
-  .page-services .service__wrapper .button--discover {
-    width: 410px;
-    height: 84px;
-  }
-  .page-services .service__text {
-    font-size: 22px;
-    line-height: 31px;
-    margin-bottom: 110px;
-  }
-  .page-services .service__info-items {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .page-services .service__info-item {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    width: 24%;
-  }
-  .page-services .service__info-item::before {
-    margin-bottom: 25px;
-  }
-  .page-services .about__inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 72px;
-  }
-  .page-services .about__inner .banner--page-services-about {
-    margin-bottom: 0;
-  }
-  .page-services .about__inner .banner__image-wrapper {
-    width: 610px;
-    height: 440px;
-    margin-right: 0;
-    margin-left: 135px;
-  }
-  .page-services .about__inner .about__wrapper hr {
-    margin-bottom: 34px;
-  }
-  .page-services .about__inner .about__wrapper .title {
-    font-size: 36px;
-    line-height: 43px;
-    margin-bottom: 38px;
-  }
-  .page-services .about__inner .about__wrapper .service__item {
-    font-size: 24px;
-    line-height: 29px;
-  }
-  .page-services .service__articles .title {
-    font-size: 36px;
-    line-height: 44px;
-  }
-  .page-services .service__articles-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .page-services .service__article {
-    width: 300px;
-  }
-  .page-services .service__image-wrapper {
-    height: 193px;
-  }
 }
 
 .page-article {
