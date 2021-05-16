@@ -89,7 +89,7 @@ body {
     }
 }
 
-.container {
+.container1 {
     max-width: 440px;
     margin: 0 auto;
 
@@ -107,7 +107,7 @@ body {
 }
 
 @media screen and (min-width: 1920px) {
-    .container {
+    .container1 {
         max-width: 1290px;
 
         &--header {
@@ -862,7 +862,7 @@ main {
 
         flex-direction: column;
 
-        .container {
+        .container1 {
             min-width: 100%;
         }
 
@@ -1757,7 +1757,7 @@ main {
 
             padding-top: 57px;
 
-            .container {
+            .container1 {
 
                 display: grid;
                 justify-content: center;
@@ -1803,7 +1803,7 @@ main {
         }
 
         &__bottom {
-            .container {
+            .container1 {
                 width: 1290px;
                 margin: 0 auto;
 
