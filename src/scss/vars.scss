@@ -6,3 +6,10 @@ $purple: #221853;
 $yellow: #FFC444;
 $gray: #969696;
 
+
+$container-width: 1260px;
+$wrapper-width: 1835px;
+
+$width__item-description: ($container-width - 128px) / 2;
+
+$hide-on-dots--features : $container-width + (114px*2);

@@ -1,0 +1,53 @@
+.hide-on-mobile {
+  display: none;
+}
+
+.hide-on-desktop {
+  display: block;
+}
+
+@media screen and (min-width: 1260px) {
+  .hide-on-mobile {
+    display: block;
+  }
+  .hide-on-desktop {
+    display: none;
+  }
+}
+
+.lock {
+  overflow: hidden;
+}
+
+.dots {
+  width: 114px;
+  height: 104px;
+  background-image: url(../images/dots.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.3;
+  position: relative;
+}
+
+.slider__prev,
+.slider__next {
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.slider__next {
+  background-image: url(../images/next.svg);
+  margin-left: 63px;
+}
+
+.slider__prev {
+  background-image: url(../images/prev.svg);
+  margin-right: 63px;
+}
+/*# sourceMappingURL=main.css.map */

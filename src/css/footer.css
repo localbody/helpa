@@ -1,0 +1,287 @@
+.footer {
+  background-color: #262626;
+  padding-bottom: 69px;
+  padding-top: 27px;
+}
+
+.footer__wrapper {
+  width: 480px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.footer-menu {
+  padding-bottom: 53px;
+}
+
+.footer-menu__title {
+  color: #FFC444;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  cursor: pointer;
+  border-bottom: 1px solid white;
+}
+
+.footer-menu__title::after {
+  content: "";
+  background-image: url(../images/plus.svg);
+  width: 22px;
+  height: 22px;
+  background-size: 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.footer-menu__title--open {
+  border-bottom: none;
+}
+
+.footer-menu__title--open::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.footer-menu__items {
+  border-bottom: 1px solid white;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.footer-menu__items--open {
+  height: initial;
+  opacity: 1;
+  visibility: visible;
+}
+
+.footer-menu__item-link {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  line-height: 45px;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.footer-menu__item-link:hover {
+  color: #FFC444;
+}
+
+.footer .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -22px;
+  margin-bottom: -22px;
+}
+
+.footer .info > * {
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.footer .info__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .info__item::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+}
+
+.footer .info__item--phone::before {
+  background-image: url(../images/phone.svg);
+}
+
+.footer .info__item--worktime::before {
+  background-image: url(../images/clock.svg);
+}
+
+.footer .info__item--address::before {
+  background-image: url(../images/pin.svg);
+}
+
+.footer .info__item--link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.footer .info__item--worktime {
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+}
+
+.footer .info__item--worktime span {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.footer .info__item--address {
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.footer .info__telegram {
+  background-image: url(../images/telegram.svg);
+  margin-right: 25px;
+}
+
+.footer .info__whatsapp {
+  background-image: url(../images/whatsapp.svg);
+}
+
+.footer .info__telegram, .footer .info__whatsapp {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 41px;
+  height: 41px;
+  display: inline-block;
+}
+
+.footer .info__write-to-whatsapp, .footer .info__write-to-telegram {
+  height: 60px;
+  border: 2px solid #51C65E;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.footer .info__write-to-whatsapp {
+  border: 2px solid #51C65E;
+  color: #51C65E;
+  margin-bottom: 22px;
+}
+
+.footer .info__write-to-whatsapp:hover {
+  border: 2px solid #51C65E;
+  color: white;
+  background-color: #51C65E;
+  margin-bottom: 22px;
+}
+
+.footer .info__write-to-telegram {
+  border: 2px solid #53D8FF;
+  color: #53D8FF;
+}
+
+.footer .info__write-to-telegram:hover {
+  border: 2px solid #53D8FF;
+  background-color: #53D8FF;
+  color: white;
+}
+
+.footer .info__write-to-telegram::before, .footer .info__write-to-whatsapp::before {
+  content: "";
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+  margin-right: 19px;
+}
+
+.footer .info__write-to-telegram::before {
+  background-image: url(../images/telegram.svg);
+}
+
+.footer .info__write-to-telegram:hover::before {
+  background-image: url(../images/telegram-white.svg);
+}
+
+.footer .info__write-to-whatsapp::before {
+  background-image: url(../images/whatsapp.svg);
+}
+
+.footer .info__write-to-whatsapp:hover::before {
+  background-image: url(../images/whatsapp-white.svg);
+}
+
+@media screen and (min-width: 1260px) {
+  .footer {
+    padding-top: 57px;
+  }
+  .footer__wrapper {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 950px 280px;
+        grid-template-columns: 950px 280px;
+  }
+  .footer__wrapper .footer-menu {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .footer__wrapper .footer-menu > * {
+    margin-right: 60px;
+  }
+  .footer__wrapper .footer-menu__title {
+    border-bottom: none;
+    cursor: default;
+  }
+  .footer__wrapper .footer-menu__title::after {
+    content: none;
+  }
+  .footer__wrapper .footer-menu__items {
+    height: initial;
+    opacity: 1;
+    visibility: visible;
+    border-bottom: none;
+  }
+  .footer__wrapper .info .title.title--white {
+    display: none;
+  }
+}
+/*# sourceMappingURL=footer.css.map */
