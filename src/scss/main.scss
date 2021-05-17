@@ -33,22 +33,75 @@
     position: relative;
 }
 
-.slider__prev,
-.slider__next {
-    width: 50px;
-    height: 50px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    flex-shrink: 0;
+.slider {
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__prev,
+    &__next {
+        display: none;
+    }
+
+    @media screen and (min-width: $container-width) {
+        &__prev,
+        &__next {
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            flex-shrink: 0;
+        }
+        
+        &__next {
+            background-image: url(../images/next.svg);
+            margin-left: 63px;
+        }
+        
+        &__prev {
+            background-image: url(../images/prev.svg);
+            margin-right: 63px;
+        }
+    }
 }
 
-.slider__next {
-    background-image: url(../images/next.svg);
-    margin-left: 63px;
+// breadcrumbs ***
+.breadcrumbs {
+    
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 31px;
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        color: #7058D6;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $gray;
+
+        &::after {
+            content: "/";
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+
 }
 
-.slider__prev {
-    background-image: url(../images/prev.svg);
-    margin-right: 63px;
+@media screen and (min-width: $container-width) {
+    .breadcrumbs {
+        font-size: 18px;
+    }
 }
+
+// *** breadcrumbs

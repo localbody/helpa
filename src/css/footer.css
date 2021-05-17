@@ -119,6 +119,8 @@
   width: 32px;
   height: 32px;
   margin-right: 16px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .footer .info__item--phone::before {
