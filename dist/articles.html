@@ -112,36 +112,24 @@
                     <button class="filters__button">
                         Фильтры
                     </button>
-    
+                    
                     <div class="filters__items">
     
                         <div class="filters__item">
-                            Сортировать по:
-                            <select class="filters__item-select" name="" id="">
-                                <option class="filters__item-option" value="">Популярности</option>
-                                <option class="filters__item-option" value="">По убыванию</option>
-                                <option class="filters__item-option" value="">По возрастанию</option>
-                            </select>
+                            <div class="filters__item-label">
+                                Сортировать по:
+                            </div>
+                            <div class="filters__item-wrapper">
+                                <input class="filters__item-input" name="sort-by" type="hidden" value="По популярности">
+                                <div class="filters__item-value">По популярной популярности</div>
+                                <ul class="filters__item-select">
+                                    <li class="filters__item-option">По популярной популярности</li>
+                                    <li class="filters__item-option">По убыванию</li>
+                                    <li class="filters__item-option">Количеству комментариев</li>
+                                </ul>    
+                            </div>
                         </div>
-    
-                        <div class="filters__item">
-                            Группировать  по:
-                            <select class="filters__item-select" name="" id="">
-                                <option class="filters__item-option" value="">По дате</option>
-                                <option class="filters__item-option" value="">По убыванию</option>
-                                <option class="filters__item-option" value="">По возрастанию</option>
-                            </select>
-                        </div>
-    
-                        <div class="filters__item">
-                            Сортировать по:
-                            <select class="filters__item-select" name="" id="">
-                                <option class="filters__item-option" value="">Количеству комментариев</option>
-                                <option class="filters__item-option" value="">По убыванию</option>
-                                <option class="filters__item-option" value="">По возрастанию</option>
-                            </select>
-                        </div>
-    
+                        
                     </div>
                     
                     

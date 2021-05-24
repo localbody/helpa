@@ -1,3 +1,23 @@
+$('.filters__item').click(
+    function () {
+        if ($(this).hasClass('filters__item--open')) {
+            $(this).removeClass('filters__item--open')
+        } else {
+           $('.filters__item.filters__item--open').removeClass('filters__item--open');
+           $(this).addClass('filters__item--open');
+        }
+
+        $(this).find('.filters__item-input').attr('value', $(this).find('.filters__item-value').html());
+        
+    }
+)
+
+$('.filters__item-option').click(
+    function() {
+        $(this).parents('.filters__item-wrapper').find('.filters__item-value').html($(this).html());
+    }
+)
+
 $('.archive__item').click(
     function (e) {
 
@@ -55,8 +75,6 @@ $('.nurses__show-more-button').click(
 
 $('.filters__button').click(
     function () {
-        console.log( $(this).parent('filters') );
-
         $(this).parent('.filters').toggleClass('filters--open');
     }
 )
