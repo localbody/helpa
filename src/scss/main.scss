@@ -35,10 +35,9 @@
 
 .slider {
 
-
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    // justify-content: space-between;
 
     &__prev,
     &__next {
@@ -61,7 +60,8 @@
         
         &__next {
             background-image: url(../images/next.svg);
-            margin-left: 63px;
+            margin-left: 60px;
+            margin-right: 5px;
         }
 
         &__next:hover {
@@ -71,7 +71,8 @@
 
         &__prev {
             background-image: url(../images/prev.svg);
-            margin-right: 63px;
+            margin-right: 60px;
+            margin-left: 5px;
         }
 
         &__prev:hover {

@@ -1,7 +1,23 @@
+const swiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 5,
+    spaceBetween: 30,
+    cssMode: true,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.slider__next',
+      prevEl: '.slider__prev',
+    },
+  
+});
+
 $('.filters__item').click(
     function () {
         if ($(this).hasClass('filters__item--open')) {
-            $(this).removeClass('filters__item--open')
+            $(this).removeClass('fi5ters__item--open')
         } else {
            $('.filters__item.filters__item--open').removeClass('filters__item--open');
            $(this).addClass('filters__item--open');

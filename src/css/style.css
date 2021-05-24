@@ -1165,15 +1165,11 @@ hr {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100%;
     margin: 0 auto;
-  }
-  .menu__item {
-    margin-left: 13px;
-    margin-right: 13px;
   }
   .menu__item:hover {
     -webkit-box-shadow: none;
@@ -4694,6 +4690,10 @@ hr {
   color: black;
 }
 
+.contacts__content--how p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .contacts__links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4884,6 +4884,9 @@ hr {
   .contacts__items .contacts__item--how .contacts__content--how {
     font-size: 22px;
     line-height: 27px;
+  }
+  .contacts__items .contacts__item--how .contacts__content--how p:not(:last-child) {
+    margin-bottom: 30px;
   }
   .contacts__items .contacts__map-wrapper {
     -ms-grid-row: 2;
@@ -5775,9 +5778,6 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .slider__prev, .slider__next {
@@ -5800,7 +5800,8 @@ hr {
   }
   .slider__next {
     background-image: url(../images/next.svg);
-    margin-left: 63px;
+    margin-left: 60px;
+    margin-right: 5px;
   }
   .slider__next:hover {
     background-image: url(../images/next-white.svg);
@@ -5809,7 +5810,8 @@ hr {
   }
   .slider__prev {
     background-image: url(../images/prev.svg);
-    margin-right: 63px;
+    margin-right: 60px;
+    margin-left: 5px;
   }
   .slider__prev:hover {
     background-image: url(../images/prev-white.svg);

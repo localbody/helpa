@@ -37,9 +37,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .slider__prev, .slider__next {
@@ -62,7 +59,8 @@
   }
   .slider__next {
     background-image: url(../images/next.svg);
-    margin-left: 63px;
+    margin-left: 60px;
+    margin-right: 5px;
   }
   .slider__next:hover {
     background-image: url(../images/next-white.svg);
@@ -71,7 +69,8 @@
   }
   .slider__prev {
     background-image: url(../images/prev.svg);
-    margin-right: 63px;
+    margin-right: 60px;
+    margin-left: 5px;
   }
   .slider__prev:hover {
     background-image: url(../images/prev-white.svg);
