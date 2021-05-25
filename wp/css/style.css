@@ -1161,7 +1161,7 @@ hr {
             box-shadow: none;
     background-color: #FFC444;
   }
-  .menu__items {
+ .menu__items {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1171,6 +1171,8 @@ hr {
     width: 100%;
     margin: 0 auto;
   }
+	
+  
   .menu__item:hover {
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -1274,6 +1276,11 @@ hr {
   color: #7058D6;
 }
 
+.banner__text p:not(:last-child) {
+    margin-bottom: 23px;
+}
+
+
 .banner--404 .banner__text {
   font-size: 20px;
   margin-bottom: 34px;
@@ -1352,6 +1359,10 @@ hr {
   margin-bottom: 15px;
 }
 
+.banner--work-with p:not(:last-child) {
+  margin-bottom: 19px;
+}
+
 .banner--work-with .banner__image-wrapper {
   margin-bottom: 50px;
 }
@@ -1394,6 +1405,10 @@ hr {
     font-size: 50px;
     line-height: 71px;
   }
+	
+.banner__text p:not(:last-child) {
+    margin-bottom: 33px;
+}	
   .banner--selection .banner__wrapper .banner__text {
     font-size: 30px;
     line-height: 37px;
@@ -1472,7 +1487,13 @@ hr {
   .banner--work-with .banner__wrapper .banner__text p {
     font-size: 25px;
     line-height: 31px;
+	
   }
+	
+	.banner--work-with .banner__wrapper .banner__text p:not(:last-child) {
+		margin-bottom: 31px;
+	}
+
   .banner--about {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2151,6 +2172,10 @@ hr {
   margin-left: 21px;
   margin-bottom: 60px;
   padding: 47px 25px;
+}
+
+.features .title {
+	margin-bottom: 15px;
 }
 
 .features__subtitle {
@@ -3182,6 +3207,10 @@ hr {
   margin-bottom: 21px;
 }
 
+.articles .article__text p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
 .articles .article__date {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3766,6 +3795,7 @@ hr {
   font-size: 24px;
   font-weight: 400;
   color: black;
+	margin-right: 5px;
 }
 
 .prices__item-value::after {
@@ -3773,6 +3803,7 @@ hr {
   font-size: 24px;
   font-weight: 400;
   color: black;
+	margin-left: 5px;
 }
 
 .prices__item-button {
@@ -3783,6 +3814,10 @@ hr {
   font-weight: 700;
   height: 68px;
   width: 100%;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
 }
 
 @media screen and (min-width: 1260px) {
@@ -4126,6 +4161,10 @@ hr {
   border: 3px solid #FFC444;
   border-radius: 5px;
   text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
 }
 
 .nurses__show-more-wrapper {
@@ -4553,6 +4592,11 @@ hr {
   margin-bottom: 38px;
 }
 
+.nurse__about p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+
 @media screen and (min-width: 1260px) {
   .nurse {
     display: -webkit-box;
@@ -4626,6 +4670,10 @@ hr {
     font-size: 20px;
     line-height: 25px;
   }
+	.nurse__about p:not(:last-child) {
+    	margin-bottom: 25px;
+	}
+
 }
 
 .contacts {
@@ -4691,8 +4739,8 @@ hr {
 }
 
 .contacts__content--how p:not(:last-child) {
-  margin-bottom: 20px;
-}
+                margin-bottom: 20px;
+            }
 
 .contacts__links {
   display: -webkit-box;
@@ -4835,7 +4883,7 @@ hr {
   .contacts__items {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "phones address work-time social" "map map map map" "entity address-office address-office address-office" "how how how how";
+        grid-template-areas: "phones address work-time social" "map map map map" "entity address-office address-office address-office" "how how how how";
     -webkit-column-gap: 90px;
             column-gap: 90px;
     row-gap: 90px;
@@ -4877,6 +4925,10 @@ hr {
     -ms-grid-column-span: 4;
     grid-area: how;
   }
+  .contacts__items .contacts__item--how .contacts__content--how p:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
   .contacts__items .contacts__item--how .contacts__title {
     font-size: 36px;
     margin-bottom: 30px;
@@ -4884,9 +4936,6 @@ hr {
   .contacts__items .contacts__item--how .contacts__content--how {
     font-size: 22px;
     line-height: 27px;
-  }
-  .contacts__items .contacts__item--how .contacts__content--how p:not(:last-child) {
-    margin-bottom: 30px;
   }
   .contacts__items .contacts__map-wrapper {
     -ms-grid-row: 2;
@@ -4905,7 +4954,7 @@ hr {
     display: -ms-grid;
     display: grid;
     margin-bottom: 163px;
-        grid-template-areas: "name phone" "message message" "button-agreement button-agreement";
+        grid-template-areas: "name phone" "message message" "button-agreement button-agreement";
     -webkit-column-gap: 32px;
             column-gap: 32px;
     row-gap: 25px;
@@ -5087,6 +5136,11 @@ hr {
   margin-bottom: 61px;
 }
 
+.page-services .service__text p:not(:last-child) {
+  margin-bottom: 21px;
+}
+
+
 .page-services .service__info-items {
   padding: 55px 27px;
   display: -webkit-box;
@@ -5254,6 +5308,9 @@ hr {
     line-height: 31px;
     margin-bottom: 110px;
   }
+	.page-services .service__text p:not(:last-child) {
+		margin-bottom: 27px;
+	}
   .page-services .service__info-items {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -5375,6 +5432,10 @@ hr {
   margin-bottom: 36px;
 }
 
+.page-article .article__text p:not(:last-child) {
+    margin-bottom: 28px;
+}
+
 .page-article .article__info {
   color: #555555;
   font-size: 12px;
@@ -5428,7 +5489,7 @@ hr {
   margin-bottom: 32px;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "icon title" "text text";
+      grid-template-areas: "icon title" "text text";
   -ms-grid-columns: 103px 1fr;
       grid-template-columns: 103px 1fr;
 }
@@ -5682,7 +5743,7 @@ hr {
     line-height: 30px;
   }
   .page-article .article__section {
-        grid-template-areas: "icon title" "icon text";
+        grid-template-areas: "icon title" "icon text";
     -ms-grid-columns: 166px 1fr;
         grid-template-columns: 166px 1fr;
   }
@@ -5778,6 +5839,9 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .slider__prev, .slider__next {
@@ -5800,8 +5864,7 @@ hr {
   }
   .slider__next {
     background-image: url(../images/next.svg);
-    margin-left: 60px;
-    margin-right: 5px;
+    margin-left: 63px;
   }
   .slider__next:hover {
     background-image: url(../images/next-white.svg);
@@ -5810,8 +5873,7 @@ hr {
   }
   .slider__prev {
     background-image: url(../images/prev.svg);
-    margin-right: 60px;
-    margin-left: 5px;
+    margin-right: 63px;
   }
   .slider__prev:hover {
     background-image: url(../images/prev-white.svg);

@@ -1,0 +1,70 @@
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.alignleft {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 15px;
+}
+
+.alignright {
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 15px;
+
+}
+
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
+
+.header .menu__items > .current_page_item, .header .menu__items > .current-post-ancestor, 
+.header .menu__items > .current-menu-item, .header .menu__items > .current-page-ancestor, 
+.header .menu__items > .current-menu-ancestor, .header .menu__items > .current-menu-parent
+{ background-color: #FCB721 !important; }
+
+.header .menu__items ul .current_page_item, .header .menu__items ul .current-post-ancestor, 
+.header .menu__items ul .current-menu-item, .header .menu__items ul .current-page-ancestor, 
+.header .menu__items ul .current-menu-ancestor, .header .menu__items ul .current-menu-parent
+{ background-color: #F4F5FE !important; }
+
+.footer .current_page_item > a, .header .footer .current-post-ancestor > a, 
+.footer .current-menu-item > a, .header .footer .current-page-ancestor > a, 
+.footer .current-menu-ancestor > a, .header .footer .current-menu-parent > a
+{ color: #FFC444 !important; }
+
+.articles__inner .current-menu-ancestor > ul { height: inherit; visibility: visible; opacity: 1; -webkit-transition: 0.3s ease opacity; transition: 0.3s ease opacity; }
+
+.wpcf7-not-valid-tip, .sent .wpcf7-response-output { display:none !important; }
+.wpcf7-response-output { margin:15px 0 0 0 !important; text-align:center; font-size: 13px; }
+.wpcf7-not-valid { border: 1px solid #C00 !important; }
+
+.popup__body .wpcf7-form-control-wrap { display: block; padding-bottom: 11px; }
+.tag__label { text-decoration: none; }
+.filters a { color: #555555; text-decoration: none; }

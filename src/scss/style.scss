@@ -1741,16 +1741,16 @@ hr {
         margin-bottom: 63px;
     }
 
-    &__items {
-        display: flex;
-        margin-right: -15px;
-        margin-left: -15px;
+    // &__items {
+    //     display: flex;
+    //     margin-right: -15px;
+    //     margin-left: -15px;
 
-        & > * {
-            margin-right: 15px;
-            margin-left: 15px;
-        }
-    }
+    //     & > * {
+    //         margin-right: 15px;
+    //         margin-left: 15px;
+    //     }
+    // }
 
     &__item {
         border: 1px solid #E1E1E1;

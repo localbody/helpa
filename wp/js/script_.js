@@ -1,43 +1,7 @@
-const swiper = new Swiper('.slider--cooperation', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    slidesPerView: 5,
-    spaceBetween: 30,
-    cssMode: true,
-    uniqueNavElements: false,
-    setWrapperSize: true,
-    width: 900,
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.slider__next',
-      prevEl: '.slider__prev',
-    },
-});
-
-const swiper2 = new Swiper('.slider--articles', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    slidesPerView: 3,
-    spaceBetween: 50,
-    cssMode: true,
-    uniqueNavElements: false,
-    setWrapperSize: true,
-    width: 1000,
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.slider__next',
-      prevEl: '.slider__prev',
-    },
-});
-
 $('.filters__item').click(
     function () {
         if ($(this).hasClass('filters__item--open')) {
-            $(this).removeClass('fi5ters__item--open')
+            $(this).removeClass('filters__item--open')
         } else {
            $('.filters__item.filters__item--open').removeClass('filters__item--open');
            $(this).addClass('filters__item--open');
@@ -157,7 +121,7 @@ $('.mobile-menu__button').click(
 
 $('.menu__item--dropdown').click(
     function (e) {
-        e.preventDefault();
+//         e.preventDefault();
         $(this).find('.menu__link--dropdown').toggleClass('menu__link--dropdown-open');
         $(this).find('.submenu__items').toggleClass('submenu__items--open');
     }

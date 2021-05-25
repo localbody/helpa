@@ -6,9 +6,7 @@ const swiper = new Swiper('.slider--cooperation', {
     spaceBetween: 30,
     cssMode: true,
     uniqueNavElements: false,
-    setWrapperSize: true,
-    width: 900,
-
+  
     // Navigation arrows
     navigation: {
       nextEl: '.slider__next',
