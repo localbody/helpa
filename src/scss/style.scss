@@ -3209,11 +3209,12 @@ hr {
             font-size: 30px;
             font-weight: 700;
 
-            &::before {
+            span {
                 content: "Цена за месяц:";
                 font-size: 24px;
                 font-weight: 400;
                 color: black;
+                margin-right: 5px;
             }
 
             &::after {
@@ -3221,6 +3222,7 @@ hr {
                 font-size: 24px;
                 font-weight: 400;
                 color: black;
+                margin-left: 5px;
             }
 
         }
@@ -3235,6 +3237,11 @@ hr {
             font-weight: 700;
             height: 68px;
             width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
         }
 
 
@@ -3602,6 +3609,11 @@ hr {
         border: 3px solid $yellow;
         border-radius: 5px;
         text-transform: uppercase;
+
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
     }
 
 
