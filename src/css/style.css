@@ -1600,6 +1600,15 @@ hr {
   background-image: url(../images/service-nurse.svg);
 }
 
+.services .service__price {
+  margin-top: 15px;
+}
+
+.services .service__price span {
+  font-weight: 700;
+  color: #6165D7;
+}
+
 @media screen and (min-width: 1260px) {
   .services {
     margin: 0 auto 103px auto;
@@ -2307,19 +2316,6 @@ hr {
   width: 1226px;
   color: black;
   margin-bottom: 63px;
-}
-
-.cooperation__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-.cooperation__items > * {
-  margin-right: 15px;
-  margin-left: 15px;
 }
 
 .cooperation__item {

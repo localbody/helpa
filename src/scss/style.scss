@@ -1072,6 +1072,16 @@ hr {
             }
 
         }
+
+        &__price {
+
+            margin-top: 15px;
+            span {
+                font-weight: 700;
+                color: $bg-accent;
+            }
+
+        }
     }
 }
 
@@ -4645,6 +4655,7 @@ hr {
                 &::after {
                     font-size: 30px;
                 }
+
             }
 
             .service__items,
