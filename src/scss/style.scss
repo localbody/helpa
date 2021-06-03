@@ -28,7 +28,7 @@ h5,
 h6 {
     margin: 0;
 }
-    
+
 ol,
 ul,
 li {
@@ -61,7 +61,7 @@ input[type=file] {
 textarea {
     resize: none;
 }
- 
+
 body {
     min-width: 480px;
     // overflow-x: hidden;
@@ -131,7 +131,7 @@ hr {
     }
 
     &--why {
-        margin-bottom: 70px;       
+        margin-bottom: 70px;
     }
 
     &--404 {
@@ -188,8 +188,8 @@ hr {
             position: absolute;
             top: 32px;
             right: 32px;
-        }    
-        
+        }
+
         @media screen and (max-width: 1710px) {
             .dots--left-top,
             .dots--right-top {
@@ -209,7 +209,7 @@ hr {
         position: relative;
         background-color: #FBFBFB;
         border-radius: 10px;
-        
+
         @media screen and (max-width: 1710px) {
             .dots--left-top,
             .dots--right-top {
@@ -241,7 +241,7 @@ hr {
         border-radius: 10px;
         position: relative;
 
-        
+
         .dots--left-top {
             position: absolute;
             bottom: 32px;
@@ -252,8 +252,8 @@ hr {
             position: absolute;
             top: 32px;
             right: 32px;
-        }    
-        
+        }
+
         @media screen and (max-width: 1710px) {
             .dots--left-top,
             .dots--right-top {
@@ -285,10 +285,10 @@ hr {
             top: 50px;
         }
     }
-}   
+}
 
 .container {
-    
+
     max-width: 480px;
     margin: 0 auto;
 
@@ -322,7 +322,7 @@ hr {
 
     .logo {
         width: 150px;
-        height: 52px;   
+        height: 52px;
         background-image: url(../images/logo.svg);
         background-position: center;
         background-repeat: no-repeat;
@@ -348,7 +348,7 @@ hr {
     }
 
     @media screen and (min-width: $container-width) {
-            margin-bottom: 44px;  
+            margin-bottom: 44px;
 
             &__inner {
                 max-width: none;
@@ -362,10 +362,10 @@ hr {
                 align-items: center;
 
                 justify-content: space-between;
-                
+
                 width: 80%;
             }
-    
+
             &__phone {
                 display: flex;
                 align-items: center;
@@ -391,26 +391,26 @@ hr {
                 }
 
             }
-    
-    
+
+
             &__worktime {
                 display: flex;
                 flex-direction: column;
-    
+
                 .line-one {
                     color: black;
                     font-size: 20px;
                     font-weight: 600;
                 }
-    
-    
+
+
             }
-    
+
             .logo {
                 width: 202px;
                 height: 70px;
                 }
-    
+
             .mobile-menu__button {
                 display: none;
             }
@@ -418,7 +418,7 @@ hr {
             &--shadow {
                 box-shadow: none;
             }
-    
+
     }
 }
 
@@ -449,7 +449,7 @@ hr {
             font-weight: 600;
 
             &--doc {
-                
+
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -476,7 +476,7 @@ hr {
                 &:hover {
                     color: $accent;
                 }
-                
+
             }
 
             &--whatsapp {
@@ -500,7 +500,7 @@ hr {
     &--open {
         top: 3px;
         left: calc((100% - 480px)/2);
-        
+
         opacity: 1;
         visibility: visible;
         z-index: 10;
@@ -535,7 +535,7 @@ hr {
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
         box-shadow: 0px 1px 0px 0px white;
 
         &:hover {
@@ -590,7 +590,7 @@ hr {
             box-shadow: none;
         }
 
-        
+
 
         &__link {
             height: 43px;
@@ -616,7 +616,7 @@ hr {
     }
 
     @media screen and (min-width: $container-width) {
-              
+
             position: static;
             width: 100%;
             opacity: 1;
@@ -625,56 +625,56 @@ hr {
             background-color: white;
             box-shadow: none;
             background-color: $yellow;
-    
+
             &__items {
                 display: flex;
                 justify-content: space-between;
                 width: 100%;
                 margin: 0 auto;
             }
-    
+
             &__item {
                 // margin-left: 13px;
                 // margin-right: 13px;
             }
-    
+
             &__item:hover {
                 box-shadow: none;
             }
-    
+
             &__link {
                 white-space: nowrap;
                 box-shadow: none;
             }
-    
+
             &__link:hover {
                 box-shadow: none;
             }
-    
+
             .menu__etc {
                 display: none;
             }
-    
+
             &__etc-link--doc {
                 margin-bottom: 0;
             }
-    
+
             &__etc-link--whatsapp {
                 width: 287px;
             }
-    
+
             .submenu {
-    
+
                 &__items {
                     position: absolute;
                     box-shadow: 0px 0px 9px rgba(97, 101, 215, 0.15);
                     border-radius: 0px 0px 5px 5px;
                     border-bottom: 4px solid $yellow;
                 }
-    
+
             }
-        
-    }    
+
+    }
 }
 // *** menu
 
@@ -700,7 +700,7 @@ hr {
         color: white;
     }
 }
-// *** title 
+// *** title
 
 
 // banner ***
@@ -742,12 +742,12 @@ hr {
                 font-family: $font2;
                 margin-bottom: 51px;
                 color: black;
-    
+
                 span {
                     color: #7058D6;
                 }
-            }        
-    
+            }
+
             &__text {
                 font-size: 20px;
                 margin-bottom: 34px;
@@ -803,7 +803,7 @@ hr {
             p {
                 margin-top: 15px;
                 margin-bottom: 15px;
-  
+
             }
         }
 
@@ -932,7 +932,7 @@ hr {
             }
 
             .banner__wrapper {
-                
+
                 width: 688px;
                 margin-right: 107px;
 
@@ -970,7 +970,7 @@ hr {
 
             .banner__image-wrapper {
                 width: 473px;
-                height: 340px; 
+                height: 340px;
             }
 
             .banner__wrapper {
@@ -1014,19 +1014,20 @@ hr {
 
     }
 }
-// *** banner 
+// *** banner
 
 // services ***
 .services {
     &__wrapper {
         display: flex;
         flex-direction: column;
-        
+        flex-wrap: wrap;
+
         // row-gap: 22px;
         margin-top: -11px;
         margin-bottom: 31px;
         // margin-bottom: 42px;
-    
+
         & > * {
             margin-top: 11px;
             margin-bottom: 11px;
@@ -1034,14 +1035,14 @@ hr {
     }
 
     .service {
-        height: 253px;
+        min-height: 253px;
         box-shadow: 0px 4px 10px rgba(135, 115, 233, 0.25);
         border-radius: 10px;
         background-color: white;
         padding: 17px 27px;
         color: black;
         font-size: 18px;
-    
+
         &__title {
             font-family: $font2;
             font-size: 20px;
@@ -1049,28 +1050,12 @@ hr {
             display: flex;
             align-items: center;
             margin-bottom: 17px;
+        }
 
-            &::before {
-                content: "";
-                width: 88px;
-                height: 88px;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
-                margin-right: 16px;
-
-            }
-
-            &--sick-nurse::before {
-                background-image: url(../images/service-sick-nurse.svg);
-            }
-            &--transfer::before {
-                background-image: url(../images/service-car.svg);
-            }
-            &--nurse::before {
-                background-image: url(../images/service-nurse.svg);
-            }
-
+        &__image {
+            width: 88px;
+            height: 88px;
+            margin-right: 16px;
         }
 
         &__price {
@@ -1090,21 +1075,27 @@ hr {
         // width: 1290px;
         margin: 0 auto 103px auto;
         align-items: center;
-    
+
         .title--services {
             font-size: 36px;
             margin-bottom: 69px;
             text-align: center;
             margin-bottom: 17px;
         }
-    
+
         hr {
             margin-bottom: 42px;
         }
-    
+
         &__wrapper {
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: flex-start;
+
+            margin: -15px;
+
+            & > * {
+                margin: 15px;
+            }
 
             .service {
                 width: 30%;
@@ -1161,7 +1152,7 @@ hr {
         }
 
         .form {
-            
+
             &__title {
                 color: $purple;
                 font-family: $font2;
@@ -1222,7 +1213,7 @@ hr {
                 }
             }
         }
-    
+
     }
 
     &--our-nurses {
@@ -1233,7 +1224,7 @@ hr {
         .request__form {
             box-shadow: none;
         }
-    }   
+    }
 
     &--prices {
         margin: 0 auto;
@@ -1348,7 +1339,7 @@ hr {
                     line-height: 22px;
                 }
             }
-            
+
             .dots{
                 left: -40px;
                 top: -22px;
@@ -1382,12 +1373,12 @@ hr {
                     border-radius: 5px;
                     font-size: 16px;
                     height: 68px;
-    
+
                     &::placeholder {
                         color: black;
                     }
                 }
-    
+
                 .form__button {
                     padding-top: 19px;
                     padding-bottom: 19px;
@@ -1398,13 +1389,13 @@ hr {
                     border-radius: 5px;
                     border: 1px solid $yellow;
                     height: 68px;
-    
+
                     &--yellow {
                         background-color: $yellow;
                     }
                 }
                 }
-       
+
         }
     }
 }
@@ -1480,13 +1471,13 @@ hr {
     }
 }
 
-@media screen and (min-width: $container-width) { 
+@media screen and (min-width: $container-width) {
 
     .process {
 
         display: flex;
         align-items: center;
-        flex-direction: column;            
+        flex-direction: column;
 
         .title {
             font-size: 36px;
@@ -1526,12 +1517,12 @@ hr {
 
                 right: -165px;
                 top: -30px;
-            }   
+            }
         }
 
         &__item:nth-child(odd) {
             flex-flow: row-reverse;
-            
+
             .process__item-description {
                 justify-content: flex-start;
             }
@@ -1630,33 +1621,10 @@ hr {
         color: black;
     }
 
-    &__item::before {
-        content: "";
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
+    &__image {
         width: 99px;
         height: 99px;
         margin-right: 20px;
-    }
-
-    &__item--search::before {
-        background-image: url(../images/features-search.svg);
-    }
-    &__item--contract::before {
-        background-image: url(../images/features-contract.svg);
-    }
-    &__item--time::before {
-        background-image: url(../images/features-time.svg);
-    }
-    &__item--people::before {
-        background-image: url(../images/features-people.svg);
-    }
-    &__item--diagnosis::before {
-        background-image: url(../images/features-diagnosis.svg);
-    }
-    &__item--24per7::before {
-        background-image: url(../images/features-24per7.svg);
     }
 
 }
@@ -1683,7 +1651,7 @@ hr {
         &__items {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            // width: 1290px;
+            gap: 70px;
         }
 
         &__item {
@@ -1738,7 +1706,7 @@ hr {
 
     .title {
         font-family: $font2;
-        font-size: 36px; 
+        font-size: 36px;
         margin-bottom: 34px;
         color: black;
     }
@@ -1818,39 +1786,22 @@ hr {
 
             // margin-top: -15px;
             // margin-bottom: -15px;
-    
+
             & > * {
                 margin-top: 15px;
                 margin-bottom: 15px;
             }
 
             padding: 35px 28px;
-
-            &::before {
-                content: "";
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
-                width: 99px;
-                height: 99px;
-                margin-bottom: 30px;
-            }
-
-            &--bed::before {
-                background-image: url(../images/transfer-bed.svg);
-            }
-            &--car::before {
-                background-image: url(../images/transfer-car.svg);
-            }
-            &--nurse::before {
-                background-image: url(../images/transfer-nurse.svg);
-            }
-            &--car2::before {
-                background-image: url(../images/transfer-car2.svg);
-            }
     }
-        
-        
+
+    &__image {
+        width: 99px;
+        height: 99px;
+        margin-bottom: 30px;
+    }
+
+
 }
 
 @media screen and (min-width: $container-width) {
@@ -1935,7 +1886,7 @@ hr {
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+
         .title {
             font-size: 36px;
             margin-bottom: 85px;
@@ -1981,7 +1932,7 @@ hr {
             top: 50px;
         }
 
-        
+
     }
 }
 // order-transfer ***
@@ -2022,7 +1973,7 @@ hr {
         font-weight: 700;
         font-size: 20px;
         border-radius: 5px;
-        box-shadow: 
+        box-shadow:
                     9px 9px 0px -2px white,
                     9px 9px 0px 0px $yellow;
         transition: .3s ease all;
@@ -2032,12 +1983,12 @@ hr {
         margin-bottom: 56px;
     }
 
-    
+
 
     &--discover:hover,
     &--order:hover {
         background-color: $bg-accent;
-        box-shadow: 
+        box-shadow:
                     9px 9px 0px -2px white,
                     9px 9px 0px 0px $bg-accent;
         color: white;
@@ -2088,13 +2039,13 @@ hr {
             font-size: 16px;
             font-weight: 700;
             color: black;
-            font-family: $font2; 
+            font-family: $font2;
         }
     }
 
 }
 
-@media screen and (min-width: $container-width) { 
+@media screen and (min-width: $container-width) {
     .reviews {
 
         margin-bottom: 236px;
@@ -2109,7 +2060,7 @@ hr {
             flex-wrap: wrap;
             justify-content: space-between;
         }
-        
+
 
         &__item {
             width: 600px;
@@ -2135,7 +2086,7 @@ hr {
 
 // faq ***
 .faq {
-    
+
     .title {
         font-size: 30px;
         font-weight: 700;
@@ -2267,7 +2218,7 @@ hr {
 
 // vacancies ***
 .vacancies {
-    
+
     margin-bottom: 128px;
 
     .title {
@@ -2307,15 +2258,15 @@ hr {
             line-height: 27px;
             margin-bottom: 12px;
         }
-    
+
         &-money {
-            
+
             &::before,
             &::after {
                 font-weight: 500;
                 font-size: 18px;
                 color: black;
-                margin-bottom: 7px;    
+                margin-bottom: 7px;
             }
 
             &::before {
@@ -2327,13 +2278,13 @@ hr {
                 content: "руб/мес";
                 margin-left: 5px;
             }
-            
+
                 color: $accent;
                 font-size: 24px;
                 line-height: 37px;
                 white-space: nowrap;
         }
-    
+
         &-where {
             margin-bottom: 28px;
 
@@ -2341,7 +2292,7 @@ hr {
                 font-weight: 500;
                 font-style: 18px;
                 color: black;
-                margin-bottom: 26px;    
+                margin-bottom: 26px;
             }
 
             &::before{
@@ -2370,7 +2321,7 @@ hr {
         }
 
 
-    
+
     }
 
 }
@@ -2442,7 +2393,7 @@ hr {
 
             font-weight: 700;
             color: black;
-    
+
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -2665,7 +2616,7 @@ hr {
         width: 260px;
         height: 41px;
         margin: 0 auto 130px auto;
-        
+
 
         &__items {
             display: flex;
@@ -2714,7 +2665,7 @@ hr {
         }
 
         .articles__items {
-            
+
             flex-direction: row;
             justify-content: space-between;
 
@@ -2726,7 +2677,7 @@ hr {
                 // margin-right: 15px;
                 // margin-left: 15px;
             }
-    
+
         }
 
     }
@@ -2761,26 +2712,26 @@ hr {
                     height: initial;
                     visibility: visible;
                     opacity: 1;
-    
+
                     display: flex;
-                    flex-direction: row;                    
+                    flex-direction: row;
                     align-items: center;
                     justify-content: space-between;
-            
+
                     border-top: none;
-        
+
                     .filters__item {
-    
+
                         height: 55px;
                         width: 100%;
-    
+
                         display: flex;
                         align-items: center;
                         justify-content: flex-start;
 
                         padding-left: 0;
                         padding-right: 0;
-    
+
                         &-label {
                             margin-right: 10px;
                         }
@@ -2792,13 +2743,13 @@ hr {
             }
 
             .filters__item--open {
-    
+
                 .filters__item-option {
                     box-shadow: none;
                 }
             }
-    
-                        
+
+
         }
 
         &__inner {
@@ -2835,13 +2786,13 @@ hr {
             }
 
             &__item {
-                
+
                 span {
                     font-size: 20px;
                     color: #555555;
                     display: flex;
                     align-items: center;
-    
+
                     &::before {
                         content: "";
                         width: 19px;
@@ -2866,7 +2817,7 @@ hr {
                     transition: 0.3s ease opacity;
 
                 }
-                
+
             }
 
             &__sub-items {
@@ -2944,7 +2895,7 @@ hr {
             &__article {
                 display: flex;
                 align-items: center;
-                
+
                 &::before {
                     content: "";
                     width: 6px;
@@ -2989,7 +2940,7 @@ hr {
                     font-size: 16px;
                     font-weight: 400;
                     color: black;
-                    text-align: center;    
+                    text-align: center;
                     display: block;
                     transition: 0.3s ease all;
                 }
@@ -3081,7 +3032,7 @@ hr {
             background-image: url(../images/change-nurse.svg);
         }
 
-        
+
         span {
             color: $bg-accent;
         }
@@ -3107,7 +3058,7 @@ hr {
             line-height: 27px;
             flex-grow: 0;
             width: 28%;
-            
+
 
         }
 
@@ -3118,13 +3069,13 @@ hr {
 
             margin-right: -30px;
             margin-left: -30px;
-            
+
             & > * {
                 margin-right: 30px;
                 margin-left: 30px;
             }
         }
-        
+
     }
 }
 
@@ -3133,13 +3084,13 @@ hr {
 // prices ***
 .prices {
 
-    .title {     
+    .title {
         margin-bottom: 12px;
 
         &--consultation {
             margin-bottom: 40px;
         }
-    
+
     }
 
     hr {
@@ -3364,10 +3315,10 @@ hr {
         position: absolute;
         top: 32px;
         right: 32px;
-    }   
+    }
 }
-@media screen and (min-width: $container-width) { 
-    
+@media screen and (min-width: $container-width) {
+
     .prices-features {
 
         &__title {
@@ -3502,7 +3453,7 @@ hr {
     }
 
     .final-price--services {
-        
+
         display: flex;
         align-items: center;
 
@@ -3581,14 +3532,14 @@ hr {
     &__citizenship::before {
         content: "Гражданство:";
     }
-    
+
     &__citizenship {
         display: flex;
         align-items: center;
     }
-    
+
     &__citizenship--russia::after {
-        
+
         content: "Россия";
         display: flex;
         align-items: center;
@@ -3598,7 +3549,7 @@ hr {
         background-size: contain;
         padding-left: 45px;
         height: 34px;
-    } 
+    }
 
     &__button {
         height: 68px;
@@ -3644,7 +3595,7 @@ hr {
             visibility: visible;
             opacity: 1;
         }
-        
+
     }
 
 
@@ -3758,7 +3709,7 @@ hr {
     }
 
     .title--consultation {
-        margin-bottom: 32px; 
+        margin-bottom: 32px;
     }
 
     .request__form {
@@ -3769,7 +3720,7 @@ hr {
 
     .form__input {
         border: 1px solid #DBDBDB;
-    }    
+    }
 
 }
 
@@ -3862,7 +3813,7 @@ hr {
                 width: 47%;
             }
         }
-        
+
     }
 }
 
@@ -3889,7 +3840,7 @@ hr {
         font-size: 20px;
         font-weight: 500;
         color: black;
-        
+
         display: flex;
         flex-direction: column;
 
@@ -3956,7 +3907,7 @@ hr {
         background-repeat: no-repeat;
         background-size: contain;
         padding-left: 45px;
-        height: 34px;    
+        height: 34px;
         color: black;
         font-size: 20px;
         font-weight: 500;
@@ -4010,7 +3961,7 @@ hr {
     &__responsibilities-item {
         display: flex;
         align-items: center;
-        
+
         &::before {
             content: "";
             width: 37px;
@@ -4266,7 +4217,7 @@ hr {
             font-size: 16px;
             font-weight: 400;
             color: black;
-            
+
             &-link {
                 text-decoration: none;
                 color: $bg-accent;
@@ -4283,7 +4234,7 @@ hr {
 
 @media screen and (min-width: $container-width) {
     .contacts {
-        
+
         hr {
             margin-bottom: 23px;
         }
@@ -4302,10 +4253,10 @@ hr {
                                     "map map map map"
                                     "entity address-office address-office address-office"
                                     "how how how how";
-            
+
             column-gap: 90px;
             row-gap: 90px;
-        
+
             .contacts__item--phone {
                 grid-area: phones;
             }
@@ -4338,7 +4289,7 @@ hr {
 
                     p:not(:last-child) {
                         margin-bottom: 30px;                    }
-                    
+
                 }
             }
 
@@ -4383,7 +4334,7 @@ hr {
                     grid-area: button-agreement;
                     display: flex;
                     align-items: center;
-                    
+
                     .form__button {
                         width: 410px;
                         margin-right: 70px;
@@ -4400,7 +4351,7 @@ hr {
 
 // page-services ***
 .page-services {
-    
+
     .title {
         margin-bottom: 15px;
     }
@@ -4508,7 +4459,7 @@ hr {
             height: 38px;
             border-bottom: 2px dashed $bg-accent;
             margin-bottom: 34px;
-              
+
         }
 
         &__link {
@@ -4519,7 +4470,7 @@ hr {
             text-decoration: none;
 
             display: block;
-            
+
             margin-bottom: 30px;
 
             transition: 0.3s ease all;
@@ -4559,7 +4510,7 @@ hr {
             &:last-child {
                 margin-bottom: 0;
             }
-            
+
             &::before {
                 content: "";
                 background-image: url(../images/check-mark.svg);
@@ -4571,7 +4522,7 @@ hr {
                 flex-shrink: 0;
             }
         }
-   
+
         &__articles {
             display: flex;
             flex-direction: column;
@@ -4580,9 +4531,9 @@ hr {
             .title {
                 margin-bottom: 35px;
             }
-        }        
+        }
 
-    
+
         &__article {
             text-decoration: none;
             margin-bottom: 32px;
@@ -4595,7 +4546,7 @@ hr {
                 font-weight: 600;
             }
         }
-    
+
         &__image-wrapper {
             position: relative;
             margin-bottom: 18px;
@@ -4631,11 +4582,11 @@ hr {
 @media screen and (min-width: $container-width) {
 
     .page-services {
-        
+
         .title {
             margin-bottom: 25px;
         }
-        
+
         .service__inner {
             display: flex;
             margin-bottom: 51px;
@@ -4658,7 +4609,7 @@ hr {
                 font-size: 46px;
                 line-height: 59px;
             }
-            
+
             .service__price {
                 font-size: 36px;
                 line-height: 44px;
@@ -4796,7 +4747,7 @@ hr {
     padding-bottom: 62px;
 
     .article {
-        
+
         .title {
             font-size: 30px;
             line-height: 37px;
@@ -4915,7 +4866,7 @@ hr {
 
                 .article__section-icon {
                     background-image: url(../images/book.svg);
-                } 
+                }
             }
 
             &--warning {
@@ -4923,7 +4874,7 @@ hr {
 
                 .article__section-icon {
                     background-image: url(../images/exclamation.svg);
-                } 
+                }
             }
 
             &--recommended {
@@ -4931,7 +4882,7 @@ hr {
 
                 .article__section-icon {
                     background-image: url(../images/team.svg);
-                } 
+                }
             }
         }
 
@@ -5052,14 +5003,14 @@ hr {
                 line-height: 61px;
                 margin-bottom: 58px;
             }
-            
-            &__image-wrapper { 
+
+            &__image-wrapper {
                 height: 476px;
             }
 
             &__inner {
                 display: flex;
-                
+
             }
 
             &__links {
@@ -5071,7 +5022,7 @@ hr {
 
                 margin-top: -12px;
                 margin-bottom: -12px;
-                
+
                 & > * {
                     margin-top: 12px;
                     margin-bottom: 12px;
@@ -5087,7 +5038,7 @@ hr {
                     line-height: 37px;
                     margin-bottom: 33px;
                 }
-    
+
             }
 
             &__link {
@@ -5178,7 +5129,7 @@ hr {
                     margin-bottom: 20px;
                 }
             }
-    
+
             &__section--recommended {
                 margin-bottom: 103px;
             }

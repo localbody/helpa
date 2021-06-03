@@ -1545,6 +1545,8 @@ hr {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: -11px;
   margin-bottom: 31px;
 }
@@ -1555,7 +1557,7 @@ hr {
 }
 
 .services .service {
-  height: 253px;
+  min-height: 253px;
   -webkit-box-shadow: 0px 4px 10px rgba(135, 115, 233, 0.25);
           box-shadow: 0px 4px 10px rgba(135, 115, 233, 0.25);
   border-radius: 10px;
@@ -1578,26 +1580,10 @@ hr {
   margin-bottom: 17px;
 }
 
-.services .service__title::before {
-  content: "";
+.services .service__image {
   width: 88px;
   height: 88px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
   margin-right: 16px;
-}
-
-.services .service__title--sick-nurse::before {
-  background-image: url(../images/service-sick-nurse.svg);
-}
-
-.services .service__title--transfer::before {
-  background-image: url(../images/service-car.svg);
-}
-
-.services .service__title--nurse::before {
-  background-image: url(../images/service-nurse.svg);
 }
 
 .services .service__price {
@@ -1630,9 +1616,13 @@ hr {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: -15px;
+  }
+  .services__wrapper > * {
+    margin: 15px;
   }
   .services__wrapper .service {
     width: 30%;
@@ -2196,38 +2186,10 @@ hr {
   color: black;
 }
 
-.features__item::before {
-  content: "";
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+.features__image {
   width: 99px;
   height: 99px;
   margin-right: 20px;
-}
-
-.features__item--search::before {
-  background-image: url(../images/features-search.svg);
-}
-
-.features__item--contract::before {
-  background-image: url(../images/features-contract.svg);
-}
-
-.features__item--time::before {
-  background-image: url(../images/features-time.svg);
-}
-
-.features__item--people::before {
-  background-image: url(../images/features-people.svg);
-}
-
-.features__item--diagnosis::before {
-  background-image: url(../images/features-diagnosis.svg);
-}
-
-.features__item--24per7::before {
-  background-image: url(../images/features-24per7.svg);
 }
 
 @media screen and (min-width: 1260px) {
@@ -2258,6 +2220,7 @@ hr {
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+    gap: 70px;
   }
   .features__item {
     font-size: 22px;
@@ -2384,30 +2347,10 @@ hr {
   margin-bottom: 15px;
 }
 
-.transfer__item::before {
-  content: "";
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+.transfer__image {
   width: 99px;
   height: 99px;
   margin-bottom: 30px;
-}
-
-.transfer__item--bed::before {
-  background-image: url(../images/transfer-bed.svg);
-}
-
-.transfer__item--car::before {
-  background-image: url(../images/transfer-car.svg);
-}
-
-.transfer__item--nurse::before {
-  background-image: url(../images/transfer-nurse.svg);
-}
-
-.transfer__item--car2::before {
-  background-image: url(../images/transfer-car2.svg);
 }
 
 @media screen and (min-width: 1260px) {
