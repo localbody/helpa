@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/reset.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/normalize.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css">
     <?php if(is_singular('post') or is_category() or is_tag()) { ?>
     <style type="text/css"> .header .blog { background-color: #FCB721 !important; } </style>

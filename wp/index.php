@@ -23,7 +23,7 @@
     <section class="section page--articles">
         <div class="wrapper">
             <div class="container articles">
-                <div class="title"><?php echo get_the_title($idb); ?></div>
+                <h1 class="title"><?php echo get_the_title($idb); ?></h1>
                 <div class="filters">
                     <button class="filters__button">Фильтры</button>
                     <div class="filters__items">

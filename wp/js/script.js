@@ -6,7 +6,9 @@ const swiper = new Swiper('.slider--cooperation', {
     spaceBetween: 30,
     cssMode: true,
     uniqueNavElements: false,
-  
+    setWrapperSize: true,
+    width: 1010,
+
     // Navigation arrows
     navigation: {
       nextEl: '.slider__next',
@@ -155,7 +157,7 @@ $('.mobile-menu__button').click(
 
 $('.menu__item--dropdown').click(
     function (e) {
-        e.preventDefault();
+        // e.preventDefault();
         $(this).find('.menu__link--dropdown').toggleClass('menu__link--dropdown-open');
         $(this).find('.submenu__items').toggleClass('submenu__items--open');
     }

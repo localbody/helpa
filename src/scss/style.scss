@@ -3005,38 +3005,19 @@ hr {
         display: flex;
         align-items: center;
 
-        &::before {
-            content: "";
-            width: 89px;
-            height: 89px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            margin-right: 35px;
-            flex-shrink: 0;
-        }
-
-        &--choose-nurse::before {
-            background-image: url(../images/choose-nurse.svg);
-        }
-        &--validate-docs::before {
-            background-image: url(../images/validate-docs.svg);
-        }
-        &--support::before {
-            background-image: url(../images/support.svg);
-        }
-        &--trial::before {
-            background-image: url(../images/trial.svg);
-        }
-        &--change-nurse::before {
-            background-image: url(../images/change-nurse.svg);
-        }
-
-
         span {
             color: $bg-accent;
         }
+
+
     }
+
+    &__image {
+        width: 89px;
+        height: 89px;
+        margin-right: 35px;
+    }
+
 
 }
 
@@ -3627,38 +3608,14 @@ hr {
             font-weight: 500;
             line-height: 22px;
 
-            &::before {
-                content: "";
-                width: 75px;
-                height: 75px;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
-                margin-right: 25px;
-                flex-shrink: 0;
-            }
-
-            &--test-covid::before {
-                background-image: url(../images/test-covid.svg);
-            }
-            &--docs::before {
-                background-image: url(../images/docs.svg);
-            }
-            &--emotion::before {
-                background-image: url(../images/emotion.svg);
-            }
-            &--experience::before {
-                background-image: url(../images/experience.svg);
-            }
-            &--skill::before {
-                background-image: url(../images/skill.svg);
-            }
-            &--adequate::before {
-                background-image: url(../images/adequate.svg);
-            }
-
-
         }
+
+        &-image {
+            width: 75px;
+            height: 75px;
+            margin-right: 25px;
+        }
+
 
     }
 

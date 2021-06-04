@@ -19,7 +19,7 @@
         <div class="wrapper">
             <div class="container page-article">
                 <div class="article">
-                    <div class="title"><?php the_title(); ?></div> 
+                    <h1 class="title"><?php the_title(); ?></h1> 
                     <div class="article__inner">
                         <?php if(have_rows('ssylki')): ?>
                         <div class="article__links hide-on-mobile">
@@ -50,7 +50,7 @@
 
                             <?php elseif( get_row_layout() == 'b2' ): ?>
 
-                            <div class="title"<?php if(get_sub_field('id')) { echo ' id="'.get_sub_field('id').'"'; } ?>><?php echo get_sub_field('zagolovok'); ?></div>
+                            <h2 class="title"<?php if(get_sub_field('id')) { echo ' id="'.get_sub_field('id').'"'; } ?>><?php echo get_sub_field('zagolovok'); ?></h2>
 
                             <?php elseif( get_row_layout() == 'b3' ): ?>
 
@@ -67,7 +67,7 @@
 
                             <div class="article__features"<?php if(get_sub_field('id')) { echo ' id="'.get_sub_field('id').'"'; } ?>>
                             	<?php if(get_sub_field('zagolovok')) { ?>
-                                <div class="article__features-title"><?php echo get_sub_field('zagolovok'); ?></div>
+                                <h3 class="article__features-title"><?php echo get_sub_field('zagolovok'); ?></h3>
                                 <?php } if(get_sub_field('tip') == 1) { ?>
                                 <div class="article__features-items article__features-items--stars">
                                     <?php if(have_rows('spisok')): while(have_rows('spisok')): the_row(); ?>

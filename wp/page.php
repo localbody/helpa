@@ -125,7 +125,7 @@
         <div class="wrapper">
             <?php if($s==1) { echo '<div class="container faq">'; } else { echo '<div class="container"><div class="faq faq--index">'; } ?>
                 <?php if(get_sub_field('zagolovok')) { ?>
-                <div class="title"><?php echo get_sub_field('zagolovok'); ?></div>
+                <h3 class="title"><?php echo get_sub_field('zagolovok'); ?></h3>
                 <?php if($s!=1) { echo '<hr class="hr--center hide-on-mobile">'; } ?>
                 <?php } if(have_rows('vaprosy')): ?>
                 <div class="faq__items">
@@ -147,7 +147,7 @@
         <div class="wrapper">
             <div class="container reviews">
                 <?php if(get_sub_field('zagolovok')) { ?>
-                <div class="title"><?php echo get_sub_field('zagolovok'); ?></div>
+                <h1 class="title"><?php echo get_sub_field('zagolovok'); ?></h1>
                 <?php } if(have_rows('otzyvy')): ?>
                 <div class="reviews__items">
                     <?php while(have_rows('otzyvy')): the_row(); ?>
@@ -168,7 +168,7 @@
         <div class="wrapper">
             <div class="container vacancies">
                 <?php if(get_sub_field('zagolovok')) { ?>
-                <div class="title"><?php echo get_sub_field('zagolovok'); ?></div>
+                <h1 class="title"><?php echo get_sub_field('zagolovok'); ?></h1>
                 <?php } if(have_rows('vakansii')): ?>
                 <div class="vacancies__items">
                     <?php while(have_rows('vakansii')): the_row(); ?>
@@ -200,7 +200,7 @@
             <div class="container page-services service">
                 <div class="features features--services">
                 	<?php if(get_sub_field('zagolovok')) { ?>
-                    <div class="title"><?php echo get_sub_field('zagolovok'); ?></div>
+                    <h2 class="title"><?php echo get_sub_field('zagolovok'); ?></h2>
                     <?php } if(get_sub_field('podagolovok')) { ?>
                     <div class="features__subtitle"><?php echo get_sub_field('podagolovok'); ?></div>
                     <?php } if(have_rows('bloki')): ?>
@@ -224,7 +224,7 @@
             <div class="container">
                 <div class="features">
                     <?php if(get_sub_field('zagolovok')) { ?>
-                    <div class="title"><?php echo get_sub_field('zagolovok'); ?></div>
+                    <h3 class="title"><?php echo get_sub_field('zagolovok'); ?></h3>
                     <?php } if(get_sub_field('podagolovok')) { ?>
                     <div class="features__subtitle"><?php echo get_sub_field('podagolovok'); ?></div>
                     <?php } if(have_rows('bloki')): ?>
@@ -249,7 +249,7 @@
                 <div class="nurses__about">
                     <div class="container">
                         <?php if(get_sub_field('zagolovok')) { ?>
-                        <div class="title"><?php echo get_sub_field('zagolovok'); ?></div>
+                        <h2 class="title"><?php echo get_sub_field('zagolovok'); ?></h2>
                         <?php } if(get_sub_field('podagolovok')) { ?>
                         <div class="features__subtitle"><?php echo get_sub_field('podagolovok'); ?></div>
                         <?php } if(have_rows('bloki')): ?>
@@ -271,7 +271,7 @@
         <div class="wrapper">
             <div class="container includes">
                 <?php if(get_sub_field('zagolovok')) { ?>
-                <div class="title"><?php echo get_sub_field('zagolovok'); ?></div>
+                <h1 class="title"><?php echo get_sub_field('zagolovok'); ?></h1>
                 <?php } if(get_sub_field('podagolovok')) { ?>
                 <div class="features__subtitle"><?php echo get_sub_field('podagolovok'); ?></div>
                 <?php } if(have_rows('bloki')): ?>
@@ -294,7 +294,7 @@
         <div class="wrapper">
             <div class="container prices">
             	<?php if(get_sub_field('zagolovok')) { ?>
-                <div class="title"><?php echo get_sub_field('zagolovok'); ?></div>
+                <h2 class="title"><?php echo get_sub_field('zagolovok'); ?></h2>
                 <hr>
                 <?php } if(have_rows('bloki')): ?>
                 <div class="prices__items">
@@ -339,7 +339,7 @@
             <div class="container nurses__responsibilities"> 
                 <hr class="hide-on-mobile">
                 <?php if(get_sub_field('zagolovok')) { ?>
-                <div class="title"><?php echo get_sub_field('zagolovok'); ?></div>
+                <h2 class="title"><?php echo get_sub_field('zagolovok'); ?></h2>
                 <hr class="hide-on-desktop">
                 <?php } if(have_rows('spisok')): ?>
                 <div class="nurses__responsibilities-items">
@@ -356,7 +356,7 @@
         <div class="wrapper wrapper--prices-features">
             <div class="container prices-features">
             	<?php if(get_sub_field('zagolovok')) { ?>
-                <div class="prices-features__title"><?php echo get_sub_field('zagolovok'); ?></div><hr>
+                <h2 class="prices-features__title"><?php echo get_sub_field('zagolovok'); ?></h2><hr>
                 <?php } if(have_rows('spisok')): ?>
                 <div class="prices-features__items">
                     <?php while(have_rows('spisok')): the_row(); ?>
@@ -439,7 +439,7 @@
                     <div class="final-price__wrapper">
                         <hr class="hide-on-mobile">
                         <?php if(get_sub_field('zagolovok')) { ?>
-                        <div class="final-price__slogan"><?php echo get_sub_field('zagolovok'); ?></div>
+                        <h2 class="final-price__slogan"><?php echo get_sub_field('zagolovok'); ?></h2>
                         <?php } ?> 
                         <hr class="hide-on-desktop">
                         <?php if(get_sub_field('knopka') and get_sub_field('id_formy')) { ?> 
@@ -459,7 +459,7 @@
             <div class="container">
                 <div class="order-transfer">
                 	<?php if(get_sub_field('zagolovok')) { ?>
-                    <div class="title"><?php echo get_sub_field('zagolovok'); ?></div>
+                    <h2 class="title"><?php echo get_sub_field('zagolovok'); ?></h2>
                     <hr class="hide-on-desktop">
                     <?php } ?>
                     <div class="order-transfer__inner">
@@ -498,7 +498,7 @@
                     <div class="final-price__wrapper">
                         <hr class="hide-on-mobile"> 
                         <?php if(get_sub_field('zagolovok')) { ?>
-                        <div class="final-price__slogan"><?php echo get_sub_field('zagolovok'); ?></div>
+                        <h2 class="final-price__slogan"><?php echo get_sub_field('zagolovok'); ?></h2>
                         <?php } ?> 
                         <hr class="hide-on-desktop">
                         <?php if(get_sub_field('knopka') and get_sub_field('id_formy')) { ?> 
@@ -529,7 +529,7 @@
                     <?php } ?>
                     <div class="service__wrapper">
                     	<?php if(get_sub_field('zagolovok')) { ?>
-                        <div class="title"><?php echo get_sub_field('zagolovok'); ?></div>
+                        <h1 class="title"><?php echo get_sub_field('zagolovok'); ?></h1>
                         <?php } if(get_sub_field('cena')) { ?>
                         <div class="service__price"><?php echo get_sub_field('cena'); ?></div>
                         <?php } if(have_rows('spisok')): ?>
@@ -580,7 +580,7 @@
                     <?php } if(get_sub_field('zagolovok') or get_sub_field('spisok')) { ?>
                     <div class="about__wrapper">
                     	<?php if(get_sub_field('zagolovok')) { ?>
-                        <hr><div class="title"><?php echo get_sub_field('zagolovok'); ?></div>
+                        <hr><h2 class="title"><?php echo get_sub_field('zagolovok'); ?></h2>
                         <?php } if(have_rows('spisok')): ?>
                         <div class="service__items">
                         	<?php while(have_rows('spisok')): the_row(); ?>
@@ -605,15 +605,15 @@
             <div class="container">
                 <div class="cooperation hide-on-mobile">
                 	<?php if(get_sub_field('zagolovok')) { ?>
-                    <div class="title"><?php echo get_sub_field('zagolovok'); ?></div>
+                    <h2 class="title"><?php echo get_sub_field('zagolovok'); ?></h2>
                     <?php } if(get_sub_field('tekst')) { ?>
                     <div class="cooperation__subtitle"><?php echo get_sub_field('tekst'); ?></div>
                     <?php } if(have_rows('logotipy')): ?>
                     <div class="slider slider--cooperation">
                         <div class="slider__prev"></div>
-                        <div class="cooperation__items">
+                        <div class="swiper-wrapper">
                             <?php while(have_rows('logotipy')): the_row(); $img = get_sub_field('logotip'); ?>
-                            <div class="cooperation__item">
+                            <div class="cooperation__item swiper-slide">
                                 <img class="cooperation__image" src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>">
                             </div>
                             <?php endwhile; ?>
@@ -633,7 +633,7 @@
             <div class="container page-services service">
                 <div class="service__articles">
                 	<?php if(get_sub_field('zagolovok')) { ?>
-                    <div class="title"><?php echo get_sub_field('zagolovok'); ?></div>
+                    <h3 class="title"><?php echo get_sub_field('zagolovok'); ?></h3>
                     <?php } if(have_rows('posty')): ?>
                     <div class="service__articles-wrapper">
                         <?php while(have_rows('posty')): the_row(); $idp = get_sub_field('post');  ?>
@@ -666,7 +666,7 @@
                     <?php } ?> 
                     <div class="banner__wrapper">
                     	<?php if(get_sub_field('zagolovok')) { ?>
-                        <div class="banner__title"><?php echo get_sub_field('zagolovok'); ?></div>
+                        <h1 class="banner__title"><?php echo get_sub_field('zagolovok'); ?></h1>
                         <?php } if(get_sub_field('tekst')) { ?>
                         <div class="banner__text"><?php echo get_sub_field('tekst'); ?></div>   
                         <?php } ?> 
@@ -691,7 +691,7 @@
                     <?php } ?>
                     <div class="banner__wrapper">
                     	<?php if(get_sub_field('zagolovok')) { ?>
-                        <hr><div class="title"><?php echo get_sub_field('zagolovok'); ?></div>
+                        <hr><h2 class="title"><?php echo get_sub_field('zagolovok'); ?></h2>
                         <?php } if(get_sub_field('tekst')) { ?>
                         <div class="banner__text"><?php echo get_sub_field('tekst'); ?></div>   
                         <?php } ?> 
@@ -713,7 +713,7 @@
                     <div class="banner__wrapper">
                         <hr class="hide-on-mobile">
                         <?php if(get_sub_field('zagolovok')) { ?>
-                        <div class="title"><?php echo get_sub_field('zagolovok'); ?></div>
+                        <h3 class="title"><?php echo get_sub_field('zagolovok'); ?></h3>
                         <?php } ?> 
                         <hr class="hide-on-desktop">
                         <?php if(get_sub_field('tekst')) { ?>
@@ -739,7 +739,7 @@
                     <div class="banner__wrapper">
                         <hr class="hide-on-mobile">
                         <?php if(get_sub_field('zagolovok')) { ?>
-                        <div class="title"><?php echo get_sub_field('zagolovok'); ?></div>
+                        <h2 class="title"><?php echo get_sub_field('zagolovok'); ?></h2>
                         <?php } ?> 
                         <hr class="hide-on-desktop">
                         <?php if(get_sub_field('tekst')) { ?>
@@ -759,7 +759,7 @@
             <div class="container">
                 <div class="services">
                 	<?php if(get_sub_field('zagolovok')) { ?>
-                    <div class="title title--services"><?php echo get_sub_field('zagolovok'); ?></div>
+                    <h3 class="title title--services"><?php echo get_sub_field('zagolovok'); ?></h3>
                     <hr class="hr--center hide-on-mobile" >
                     <?php } if(have_rows('bloki')): ?>
                     <div class="services__wrapper">
@@ -790,7 +790,7 @@
             <div class="container">
                 <div class="process">
                     <?php if(get_sub_field('zagolovok')) { ?> 
-                    <div class="title"><?php echo get_sub_field('zagolovok'); ?></div><hr>
+                    <h3 class="title"><?php echo get_sub_field('zagolovok'); ?></h3><hr>
                     <?php } if(have_rows('process')): ?>
                     <div class="process__items">
                         <?php $i = 0; while(have_rows('process')): the_row(); $i++; ?>
@@ -819,7 +819,7 @@
             <div class="container">
                 <div class="transfer">
                 	<?php if(get_sub_field('zagolovok')) { ?>
-                    <div class="title"><?php echo get_sub_field('zagolovok'); ?></div><hr>
+                    <h2 class="title"><?php echo get_sub_field('zagolovok'); ?></h2><hr>
                     <?php } if(have_rows('bloki')): ?>
                     <div class="transfer__items">
                     	<?php while(have_rows('bloki')): the_row(); ?>
@@ -839,7 +839,7 @@
             <div class="container">
                 <div class="articles hide-on-mobile articles--usefull">
                     <?php if(get_sub_field('zagolovok')) { ?>
-                    <div class="title"><?php echo get_sub_field('zagolovok'); ?></div>
+                    <h3 class="title"><?php echo get_sub_field('zagolovok'); ?></h3>
                     <?php
                         }
                         if(get_sub_field('kolichestvo')) { $showposts = get_sub_field('kolichestvo'); } else { $showposts = 3; }
@@ -853,9 +853,9 @@
                     ?> 
                     <div class="slider slider--articles">
                         <div class="slider__prev"></div>
-                        <div class="articles__items">
+                        <div class="swiper-wrapper">
                             <?php while(have_posts()): the_post(); ?>
-                            <a href="<?php the_permalink(); ?>" class="articles__item article">
+                            <a href="<?php the_permalink(); ?>" class="articles__item article swiper-slide">
                             	<?php if(has_post_thumbnail()){ $thumb = wp_get_attachment_image_src(get_post_thumbnail_id(),'full',true); ?>
                                 <div class="article__image-wrapper">
                                     <img class="article__image" src="<?php echo esc_url($thumb[0]); ?>" alt="<?php the_title(); ?>" />
@@ -881,7 +881,7 @@
         <div class="wrapper">
             <div class="container nurses">
             	<?php if(get_sub_field('zagolovok')) { ?>
-                <div class="title title--nurses"><?php echo get_sub_field('zagolovok'); ?></div>
+                <h1 class="title title--nurses"><?php echo get_sub_field('zagolovok'); ?></h1>
                 <?php } ?>
                 <div class="nurses__items">
                     <?php

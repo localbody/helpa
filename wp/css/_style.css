@@ -1545,8 +1545,6 @@ hr {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-top: -11px;
   margin-bottom: 31px;
 }
@@ -1580,10 +1578,26 @@ hr {
   margin-bottom: 17px;
 }
 
-.services .service__image {
+.services .service__title::before {
+  content: "";
   width: 88px;
   height: 88px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   margin-right: 16px;
+}
+
+.services .service__title--sick-nurse::before {
+  background-image: url(../images/service-sick-nurse.svg);
+}
+
+.services .service__title--transfer::before {
+  background-image: url(../images/service-car.svg);
+}
+
+.services .service__title--nurse::before {
+  background-image: url(../images/service-nurse.svg);
 }
 
 .services .service__price {
@@ -1616,13 +1630,9 @@ hr {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    margin: -15px;
-  }
-  .services__wrapper > * {
-    margin: 15px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .services__wrapper .service {
     width: 30%;
@@ -2186,10 +2196,38 @@ hr {
   color: black;
 }
 
-.features__image {
+.features__item::before {
+  content: "";
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 99px;
   height: 99px;
   margin-right: 20px;
+}
+
+.features__item--search::before {
+  background-image: url(../images/features-search.svg);
+}
+
+.features__item--contract::before {
+  background-image: url(../images/features-contract.svg);
+}
+
+.features__item--time::before {
+  background-image: url(../images/features-time.svg);
+}
+
+.features__item--people::before {
+  background-image: url(../images/features-people.svg);
+}
+
+.features__item--diagnosis::before {
+  background-image: url(../images/features-diagnosis.svg);
+}
+
+.features__item--24per7::before {
+  background-image: url(../images/features-24per7.svg);
 }
 
 @media screen and (min-width: 1260px) {
@@ -2220,7 +2258,6 @@ hr {
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-    gap: 70px;
   }
   .features__item {
     font-size: 22px;
@@ -2347,10 +2384,30 @@ hr {
   margin-bottom: 15px;
 }
 
-.transfer__image {
+.transfer__item::before {
+  content: "";
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 99px;
   height: 99px;
   margin-bottom: 30px;
+}
+
+.transfer__item--bed::before {
+  background-image: url(../images/transfer-bed.svg);
+}
+
+.transfer__item--car::before {
+  background-image: url(../images/transfer-car.svg);
+}
+
+.transfer__item--nurse::before {
+  background-image: url(../images/transfer-nurse.svg);
+}
+
+.transfer__item--car2::before {
+  background-image: url(../images/transfer-car2.svg);
 }
 
 @media screen and (min-width: 1260px) {
@@ -3536,14 +3593,40 @@ hr {
           align-items: center;
 }
 
-.includes__item span {
-  color: #6165D7;
-}
-
-.includes__image {
+.includes__item::before {
+  content: "";
   width: 89px;
   height: 89px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   margin-right: 35px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.includes__item--choose-nurse::before {
+  background-image: url(../images/choose-nurse.svg);
+}
+
+.includes__item--validate-docs::before {
+  background-image: url(../images/validate-docs.svg);
+}
+
+.includes__item--support::before {
+  background-image: url(../images/support.svg);
+}
+
+.includes__item--trial::before {
+  background-image: url(../images/trial.svg);
+}
+
+.includes__item--change-nurse::before {
+  background-image: url(../images/change-nurse.svg);
+}
+
+.includes__item span {
+  color: #6165D7;
 }
 
 @media screen and (min-width: 1260px) {
@@ -4127,10 +4210,40 @@ hr {
   line-height: 22px;
 }
 
-.nurses__about-image {
+.nurses__about-item::before {
+  content: "";
   width: 75px;
   height: 75px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   margin-right: 25px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.nurses__about-item--test-covid::before {
+  background-image: url(../images/test-covid.svg);
+}
+
+.nurses__about-item--docs::before {
+  background-image: url(../images/docs.svg);
+}
+
+.nurses__about-item--emotion::before {
+  background-image: url(../images/emotion.svg);
+}
+
+.nurses__about-item--experience::before {
+  background-image: url(../images/experience.svg);
+}
+
+.nurses__about-item--skill::before {
+  background-image: url(../images/skill.svg);
+}
+
+.nurses__about-item--adequate::before {
+  background-image: url(../images/adequate.svg);
 }
 
 .nurses__responsibilities .title {
@@ -4740,7 +4853,10 @@ hr {
   .contacts__items {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "phones address work-time social" "map map map map" "entity address-office address-office address-office" "how how how how";
+        grid-template-areas: "phones address work-time social"
+ "map map map map"
+ "entity address-office address-office address-office"
+ "how how how how";
     -webkit-column-gap: 90px;
             column-gap: 90px;
     row-gap: 90px;
@@ -4810,7 +4926,9 @@ hr {
     display: -ms-grid;
     display: grid;
     margin-bottom: 163px;
-        grid-template-areas: "name phone" "message message" "button-agreement button-agreement";
+        grid-template-areas: "name phone"
+ "message message"
+ "button-agreement button-agreement";
     -webkit-column-gap: 32px;
             column-gap: 32px;
     row-gap: 25px;
@@ -5333,7 +5451,8 @@ hr {
   margin-bottom: 32px;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "icon title" "text text";
+      grid-template-areas: "icon title"
+ "text text";
   -ms-grid-columns: 103px 1fr;
       grid-template-columns: 103px 1fr;
 }
@@ -5587,7 +5706,8 @@ hr {
     line-height: 30px;
   }
   .page-article .article__section {
-        grid-template-areas: "icon title" "icon text";
+        grid-template-areas: "icon title"
+ "icon text";
     -ms-grid-columns: 166px 1fr;
         grid-template-columns: 166px 1fr;
   }

@@ -121,6 +121,7 @@
     </div>
 
     <script src="<?php bloginfo('template_url'); ?>/js/jquery.min.js"></script>
+    <script src="<?php bloginfo('template_url');?>/js/swiper-bundle.min.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/popup.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/template.js"></script>
