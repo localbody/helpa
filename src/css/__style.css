@@ -1123,8 +1123,8 @@ hr {
 
 .menu .submenu__link {
   height: 43px;
-  padding-left: 21px;
-  padding-right: 21px;
+  margin-left: 21px;
+  margin-right: 21px;
   font-size: 15px;
   font-weight: 500;
   color: black;
@@ -1170,9 +1170,6 @@ hr {
             justify-content: space-between;
     width: 100%;
     margin: 0 auto;
-  }
-  .menu__item {
-    width: 100%;
   }
   .menu__item:hover {
     -webkit-box-shadow: none;
