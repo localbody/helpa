@@ -5,7 +5,7 @@
         background-color: #262626;
         padding-bottom: 69px;
         padding-top: 27px;
-        
+
         &__wrapper {
             width: 480px;
             padding-left: 20px;
@@ -15,7 +15,7 @@
 
         &-menu {
             padding-bottom: 53px;
-    
+
             &__title {
                 color: $yellow;
                 font-family: $font2;
@@ -26,11 +26,11 @@
                 justify-content: space-between;
                 padding-top: 12px;
                 padding-bottom: 12px;
-    
+
                 cursor: pointer;
-    
+
                 border-bottom: 1px solid white;
-    
+
                 &::after {
                     content: "";
                     background-image: url(../images/plus.svg);
@@ -41,33 +41,33 @@
                     background-repeat: no-repeat;
                     transition: 0.3s ease all;
                 }
-    
+
                 &--open {
                     border-bottom: none;
-                    
+
                     &::after {
                         transform: rotate(90deg);
                     }
                 }
             }
-    
+
             &__items {
                 border-bottom: 1px solid white;
-                
+
                 height: 0;
                 opacity: 0;
                 visibility: hidden;
                 transition: 0.3s ease all;
-    
+
                 &--open {
                     height: initial;
                     opacity: 1;
                     visibility: visible;
                 }
             }
-    
+
             &__item {
-    
+
                 &-link {
                     font-size: 16px;
                     font-weight: 600;
@@ -81,7 +81,7 @@
                     color: $yellow;
                 }
             }
-    
+
         }
 
         .info {
@@ -179,7 +179,7 @@
 
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: space-evenly;
 
                 transition: 0.3s ease all;
             }
@@ -195,7 +195,7 @@
                 background-color: #51C65E;
                 margin-bottom: 22px;
             }
-            
+
             &__write-to-telegram {
                 border: 2px solid #53D8FF;
                 color: #53D8FF;
@@ -215,17 +215,17 @@
                 background-size: 32px;
                 width: 32px;
                 height: 32px;
-                margin-right: 19px;
+                // margin-right: 19px;
             }
-                
-                
+
+
             &__write-to-telegram::before {
                 background-image: url(../images/telegram.svg);
             }
             &__write-to-telegram:hover::before {
                 background-image: url(../images/telegram-white.svg);
             }
-                
+
             &__write-to-whatsapp::before {
                 background-image: url(../images/whatsapp.svg);
             }
@@ -287,4 +287,4 @@
         }
 }
 
-// *** footer 
+// *** footer
